@@ -1,0 +1,1350 @@
+fileFormatVersion: 2
+guid: 3240c50187af4934c9e8da2f6df531b4
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 715459771412913560
+    second: Tank_skeletal|Tank_CenaPunch
+  - first:
+      74: -1064987872600529560
+    second: Tank_skeletal|Tank_Hand_Closed
+  - first:
+      74: -2875716243716933342
+    second: Tank_skeletal|Tank_Hand_Open
+  - first:
+      74: -4401200976982621104
+    second: Tank_skeletal|Tank_Idle
+  - first:
+      74: -5877578486253234977
+    second: Tank_skeletal|Tank_Pull
+  - first:
+      74: -3990386509585611601
+    second: Tank_skeletal|Tank_restIdle
+  - first:
+      74: -5049730961891988232
+    second: Tank_skeletal|Tank_uppercut
+  - first:
+      74: 8482840383526444782
+    second: Tank_skeletal|Tank_Walk
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_CenaPunch
+      takeName: Tank_skeletal|Tank_CenaPunch
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_Hand_Closed
+      takeName: Tank_skeletal|Tank_Hand_Closed
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_Hand_Open
+      takeName: Tank_skeletal|Tank_Hand_Open
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_Idle
+      takeName: Tank_skeletal|Tank_Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_Pull
+      takeName: Tank_skeletal|Tank_Pull
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_restIdle
+      takeName: Tank_skeletal|Tank_restIdle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_uppercut
+      takeName: Tank_skeletal|Tank_uppercut
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tank_skeletal|Tank_Walk
+      takeName: Tank_skeletal|Tank_Walk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Tank
+        weight: 1
+      - path: Tank.001
+        weight: 1
+      - path: Tank_skeletal
+        weight: 1
+      - path: Tank_skeletal/Root
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+        weight: 1
+      - path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: Tank
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

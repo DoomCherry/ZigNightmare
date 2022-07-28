@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpikeHand
+  m_Mask: 01000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Tank
+    m_Weight: 0
+  - m_Path: Tank.001
+    m_Weight: 0
+  - m_Path: Tank_skeletal
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_arm_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_arm_l/Pole_arm_l/Pole_arm_l_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_arm_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_arm_r/Pole_arm_r/Pole_arm_r_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_leg_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_leg_l/pole_leg_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_leg_l/pole_leg_l/pole_leg_l_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_leg_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_leg_r/pole_leg_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/IK_leg_r/pole_leg_r/pole_leg_r_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_l/upperleg_l/leg_l/foot_l/toe_l/toe_l_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/pelvis_r/upperleg_r/leg_r/foot_r/toe_r/toe_r_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l
+    m_Weight: 1
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l
+    m_Weight: 1
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/Big_finger_1_l/Big_finger_2_l/Big_finger_2_l_end
+    m_Weight: 1
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l
+    m_Weight: 1
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l
+    m_Weight: 1
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_l/upperarm_1_l/upperarm_2_l/upperarm_3_l/arm_l/hand_l/small_finger_1_l/small_finger_2_l/small_finger_2_l_end
+    m_Weight: 1
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/Big_finger_1_r/Big_finger_2_r/Big_finger_2_r_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/clavicle_r/upperarm_1_r/upperarm_2_r/upperarm_3_r/arm_r/hand_r/small_finger_1_r/small_finger_2_r/small_finger_2_r_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/neck
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/neck/head
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_l/ear_l_end
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r
+    m_Weight: 0
+  - m_Path: Tank_skeletal/Root/pelvis/spine/chest/neck/head/ear_r/ear_r_end
+    m_Weight: 0

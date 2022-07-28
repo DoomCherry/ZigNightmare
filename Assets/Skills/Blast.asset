@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e030854898bd8554ba34da6c9c9ec3ce, type: 3}
+  m_Name: Blast
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 184950751378207249, guid: af498e39b4deb0e4fa0775a4e5f9c999, type: 3}
+  _name: 3
+  coldown: 6
+  minigunInfo:
+    bulletDamage: 0
+    torsionSpeed: 0
+    shotingTime: 0
+    bulletSpeed: 0
+    waitToShoting: 0
+    shotSpeed: 0
+  cenaPunchInfo:
+    punchDamage: 0
+    maxWaitingTime: 0
+    punchSpeed: 0
+  downScorpionInfo:
+    damagePerUnit: 0
+    maxDistance: 0
+    projectileSpeed: 0
+    grabSpeed: 0
+    stopDistance: 0
+  blastInfo:
+    blastDamage: 200
+    blastPrepareTime: 1
+    blastPushingForce: 20
+    blastEnemyLimits: 25
+    blastLimitTime: 1
+  uppercutInfo:
+    uppercutDamage: 0
+    uppercutUpVelocity: 0
+    uppercutPushingForce: 0
+    uppercutEnemyLimits: 0
+    uppercutLimitTime: 0
+    powerUppercutDamage: 0
+    powerUppercutUpVelocity: 0
+    powerUppercutPushingForce: 0
+    powerUppercutEnemyLimits: 0
+    powerUppercutLimitTime: 0
+    chargeTime: 0

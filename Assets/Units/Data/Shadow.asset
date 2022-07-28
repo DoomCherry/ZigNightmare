@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728cd1e32f959f5488ebe8fe9ae16e2d, type: 3}
+  m_Name: Shadow
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _name: 1
+  _movespeed: 7.5
+  _velocity: 0
+  _maxHp: 100
+  playerInfo:
+    jumpPower: 0
+    dashPower: 0
+    _dashTime: 0
+    maxStamina: 0
+    staminaToOnceDash: 0
+    staminaRecoverPerSecond: 0
+  robotEnemy:
+    viewSpeed: 0.25
+    _minDistanceToTarget: 1
+    _speedOnSkill: 0
+    _viewSpeedOnSkill: 0
