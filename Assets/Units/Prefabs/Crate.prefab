@@ -93,6 +93,9 @@ MonoBehaviour:
   _onShot:
     m_PersistentCalls:
       m_Calls: []
+  _onStop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7448391529592321106
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,7 +505,7 @@ GameObject:
   - component: {fileID: 7755033028616816560}
   - component: {fileID: 7755033028616816561}
   - component: {fileID: 7755033028616816574}
-  - component: {fileID: 7755033028616816575}
+  - component: {fileID: 8707108318972425119}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -621,6 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b57f246778bdc2468fbda98b497448b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _selectColor: {r: 0, g: 0, b: 0, a: 0}
   _customTarget: {fileID: 0}
   _radialMult: 3
   _mouseRadiusSelect: 1
@@ -650,7 +654,7 @@ MonoBehaviour:
   _onTakeDamage:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7755033028616816575
+--- !u!114 &8707108318972425119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -659,7 +663,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7755033028616816572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a65be7bbffa34a14597f0c3d1678e904, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c9e8061b735ae44d99619fd5a87b6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _customAnimator: {fileID: 0}
@@ -673,3 +677,4 @@ MonoBehaviour:
   _onFallToFlore:
     m_PersistentCalls:
       m_Calls: []
+  _materialBase: {fileID: 8115368896523871849}

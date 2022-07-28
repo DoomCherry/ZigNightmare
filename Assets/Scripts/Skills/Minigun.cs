@@ -126,7 +126,7 @@ public class Minigun : MonoBehaviour, ISkill
     private void Update()
     {
         Vector3 myPositionDir = MyTransform.position;
-        if (_targeter.CurrentTarget != null && _loockToTarget)
+        if (_targeter.CurrentTarget != null && _targeter.CurrentTarget.GameObject != null && _loockToTarget)
         {
             MyTransform.rotation = Quaternion.LookRotation(_targeter.CurrentTarget.MyTransform.position - myPositionDir);
         }

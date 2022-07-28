@@ -9,6 +9,7 @@ using UnityEngine.Events;
 public class Enemy : MonoBehaviour, ITarget, ICharacterLimiter
 {
     //-------PROPERTY
+    public GameObject GameObject => gameObject;
     public DamageController DamageController => _damageController == null ? (gameObject == null ? null : GetComponent<DamageController>()) : _damageController;
     private Animator Animator => _customAnimator != null ? _customAnimator : (_animator = _animator ?? GetComponent<Animator>());
 

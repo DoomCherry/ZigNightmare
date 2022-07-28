@@ -2404,6 +2404,30 @@ PrefabInstance:
       propertyPath: _bulletPrefab
       value: 
       objectReference: {fileID: 485629309}
+    - target: {fileID: 4700078410819498345, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
+      propertyPath: m_Size.x
+      value: 0.060110707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700078410819498345, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
+      propertyPath: m_Size.y
+      value: 0.031804435
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700078410819498345, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
+      propertyPath: m_Size.z
+      value: 0.07309657
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700078410819498345, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
+      propertyPath: m_Center.x
+      value: -0.00031531102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700078410819498345, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
+      propertyPath: m_Center.y
+      value: 0.01254833
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700078410819498345, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0014664893
+      objectReference: {fileID: 0}
     - target: {fileID: 4700078410819498346, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
       propertyPath: m_Name
       value: RoboTurret
@@ -9238,6 +9262,10 @@ PrefabInstance:
       propertyPath: _globalSource
       value: 
       objectReference: {fileID: 1704134365}
+    - target: {fileID: 1317205826210736539, guid: a8f1e13415c801c48af5fcef80b0e25b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1322423256542244925, guid: a8f1e13415c801c48af5fcef80b0e25b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -11780,11 +11808,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2015136294 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7448391531080433007, guid: 55d658d8598485149ab3323975075222, type: 3}
-  m_PrefabInstance: {fileID: 7448391530140612425}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2041466194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 202835632337456773, guid: 252ba61817a2cc7448797f3af565f732, type: 3}
@@ -16766,6 +16789,10 @@ PrefabInstance:
       propertyPath: _globalSource
       value: 
       objectReference: {fileID: 1946143258}
+    - target: {fileID: 1659017340, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1672209136, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: _globalSource
       value: 
@@ -17362,6 +17389,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 1856699906437745704, guid: 9bbaf4da7714305468ecb61c3014793e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4305013379295609074, guid: 9bbaf4da7714305468ecb61c3014793e, type: 3}
       propertyPath: _globalSource
       value: 
@@ -17404,35 +17435,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!1 &919132148453060853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7755033028616816572, guid: 55d658d8598485149ab3323975075222, type: 3}
-  m_PrefabInstance: {fileID: 7448391530140612425}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &919132148453060854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148453060853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c9e8061b735ae44d99619fd5a87b6d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _customAnimator: {fileID: 0}
-  _unitContainer: {fileID: 11400000, guid: b4bb780afd83ed344828eb2667d65b81, type: 2}
-  _prepareTriggerName: PrepareToSkill
-  _skillIsReadyBool: BlastActivate
-  _skill: {fileID: 2015136294}
-  _customRigidbody: {fileID: 0}
-  _physicTargets: []
-  _lookToY: 1
-  _onFallToFlore:
-    m_PersistentCalls:
-      m_Calls: []
-  _materialBase: {fileID: 1711813854456975648}
 --- !u!1 &919132148455278312
 GameObject:
   m_ObjectHideFlags: 0
@@ -17686,11 +17688,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &1711813854456975648 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8115368896523871849, guid: 55d658d8598485149ab3323975075222, type: 3}
-  m_PrefabInstance: {fileID: 7448391530140612425}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1864671182224837677
 Transform:
   m_ObjectHideFlags: 0
@@ -19230,6 +19227,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1295085128}
     m_Modifications:
+    - target: {fileID: 6303740174486459043, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2803364437005870635, guid: 7bc42d0af705a1240a5f22ce9849c352, type: 3}
     - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -19280,7 +19281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7755033028616816572, guid: 55d658d8598485149ab3323975075222, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55d658d8598485149ab3323975075222, type: 3}

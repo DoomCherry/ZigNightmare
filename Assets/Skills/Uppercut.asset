@@ -35,6 +35,9 @@ MonoBehaviour:
   blastInfo:
     blastDamage: 0
     blastPrepareTime: 0
+    blastPushingForce: 0
+    blastEnemyLimits: 0
+    blastLimitTime: 0
   uppercutInfo:
     uppercutDamage: 30
     uppercutUpVelocity: 10

@@ -12,6 +12,7 @@ using UnityEngine.Events;
 public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 {
     //-------PROPERTY
+    public GameObject GameObject => gameObject;
     public PlayerAnimationControiler AnimationControiler => _playerAnimationControiler == null ? GetComponent<PlayerAnimationControiler>() : _playerAnimationControiler;
     public DamageController DamageController => _damageController == null ? GetComponent<DamageController>() : _damageController;
     public SkillStealler MySkillStealler => _skillStealler == null ? GetComponent<SkillStealler>() : _skillStealler;

@@ -95,6 +95,7 @@ public class TargetSelector : MonoBehaviour
         {
             target.Select(_selectColor);
 
+
             if (_currentTarget.target != null)
                 _currentTarget.target.Diselect();
 
@@ -102,7 +103,7 @@ public class TargetSelector : MonoBehaviour
             _currentTarget.conditionalDistance = distance;
         }
 
-        if (_currentTarget.target != null && _currentTarget.target.MyTransform != null)
+        if (_currentTarget.target != null && _currentTarget.target.Equals(null) == false)
             _currentTarget.target.Diselect();
 
         _currentTarget.target = null;

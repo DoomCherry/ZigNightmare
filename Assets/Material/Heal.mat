@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Heal
-  m_Shader: {fileID: -6465566751694194690, guid: a92be63d0ff9667409149eca94f2aadc, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: e5ca7bc8002f08c4bbe3c6b5c87a231c, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
