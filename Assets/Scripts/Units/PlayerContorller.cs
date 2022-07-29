@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Events;
+using System.Linq;
 
 [RequireComponent(typeof(Rigidbody), typeof(Animator), typeof(CapsuleCollider))]
 [RequireComponent(typeof(DamageController), typeof(SkillStealler), typeof(PlayerAnimationControiler))]
@@ -29,36 +30,80 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     public bool JumpIsFreeze { get; set; } = false;
     public bool IsPhysicTargetsDesable { get; set; } = false;
     public IReadOnlyDictionary<SkillContainer, float> ColdownList => _coldownList;
+    //public bool OnFlore
+    //{
+    //    get
+    //    {
+    //        Vector3 postion = MyTransform.position;
+    //        postion.y = 100;
+
+    //        Ray ray = new Ray(postion, Vector3.down);
+
+    //        Vector3 colliderCenter = MyCollider.center + MyTransform.position;
+    //        float pointHeight = colliderCenter.y - (MyCollider.height * MyTransform.lossyScale.y / 2);
+
+    //        if (Physics.Raycast(ray, out RaycastHit info, 200, _jumpColliderLayer, QueryTriggerInteraction.Ignore))
+    //        {
+    //            if (Math.Round(Mathf.Abs(info.point.y - pointHeight), 2) <= 0)
+    //            {
+    //                return true;
+    //            }
+    //        }
+
+    //        return false;
+    //    }
+    //}
+
     public bool OnFlore
     {
         get
         {
-            Vector3 postion = MyTransform.position;
-            postion.y = 100;
-
-            Ray ray = new Ray(postion, Vector3.down);
-
-            Vector3 colliderCenter = MyCollider.center + MyTransform.position;
-            float pointHeight = colliderCenter.y - (MyCollider.height * MyTransform.lossyScale.y / 2);
-
-            if (Physics.Raycast(ray, out RaycastHit info, 200, _jumpColliderLayer, QueryTriggerInteraction.Ignore))
+            if (_groundTestCollider == null)
             {
-                if (Math.Round(Mathf.Abs(info.point.y - pointHeight), 2) <= 0)
+                var direction = new Vector3 { [MyCollider.direction] = 1 };
+                var offset = MyCollider.height / 2 - MyCollider.radius;
+                var localPoint0 = MyCollider.bounds.center - direction * offset;
+                var localPoint1 = MyCollider.bounds.center + direction * offset;
+
+                Collider[] colliders = Physics.OverlapCapsule(localPoint0, localPoint1, MyCollider.radius, _jumpColliderLayer, QueryTriggerInteraction.Ignore);
+                if (colliders.Length > 0)
                 {
+                    _currentSloppingFlore = colliders.FirstOrDefault(n => n.gameObject.layer == _slopingFloreLayer);
                     return true;
                 }
-            }
 
-            return false;
+                _currentSloppingFlore = null;
+                return false;
+            }
+            else
+            {
+                Collider[] colliders = Physics.OverlapSphere(_groundTestCollider.bounds.center, _groundTestCollider.radius, _jumpColliderLayer, QueryTriggerInteraction.Ignore);
+                if (colliders.Length > 0)
+                {
+                    _currentSloppingFlore = colliders.FirstOrDefault(n => n.gameObject.layer == _slopingFloreLayer);
+                    return true;
+                }
+
+                _currentSloppingFlore = null;
+                return false;
+            }
         }
     }
+
     public float CurrentStamina => _currentStamina;
     public float MaxStamina => _maxStamina;
+    public Vector3 WalkDirection => MyTransform.position - _lastPosition;
+    public bool IsSlipping => _currentSloppingFlore != null && MyRigidbody.velocity.y < 0.1f && Math.Round(WalkDirection.magnitude, 1) != 0;
 
 
 
 
     //-------FIELD
+    [SerializeField]
+    private int _slopingFloreLayer;
+    [SerializeField]
+    private SphereCollider _groundTestCollider;
+
     [SerializeField]
     private UnitContainer _unitContainer;
 
@@ -76,6 +121,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     [SerializeField]
     private float _lookToY = 1;
 
+    private Collider _currentSloppingFlore;
+
     private float _jumpPower = 5;
 
     private float _speed = 1;
@@ -90,6 +137,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     private TargetSelector _selector;
     private PlayerAnimationControiler _playerAnimationControiler;
     private Vector3 _walkDirection;
+    private Vector3 _lastPosition;
     private Transform _myTransform;
     private Rigidbody _rigidbody;
     private Vector3 _mousePointInWorld;
@@ -102,11 +150,36 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     private Dictionary<SkillContainer, float> _coldownList = new Dictionary<SkillContainer, float>();
     private bool _dashButtomIsActive = false;
     private bool _previousOnFloreState = false;
+    private bool _lastIsSlipping = false;
 
 
 
 
     //-------EVENTS
+    [SerializeField]
+    private UnityEvent _onUpdate;
+    public event UnityAction OnUpdate
+    {
+        add => _onUpdate.AddListener(value);
+        remove => _onUpdate.RemoveListener(value);
+    }
+
+    [SerializeField]
+    private UnityEvent _onNotSlipping;
+    public event UnityAction OnNotSlipping
+    {
+        add => _onNotSlipping.AddListener(value);
+        remove => _onNotSlipping.RemoveListener(value);
+    }
+
+    [SerializeField]
+    private UnityEvent _onSlipping;
+    public event UnityAction OnSlippin
+    {
+        add => _onSlipping.AddListener(value);
+        remove => _onSlipping.RemoveListener(value);
+    }
+
     [SerializeField]
     private UnityEvent _onJump;
     public event UnityAction OnJump
@@ -179,6 +252,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     private void Update()
     {
+        _onUpdate?.Invoke();
+
         void Move()
         {
             Ray ray = _main.ScreenPointToRay(Input.mousePosition);
@@ -255,7 +330,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
             if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A))
             {
-                if (_walkDirection.x == 0 && _walkDirection.y == 0 && _dashButtomIsActive == false)
+                if (_walkDirection.x == 0 && _walkDirection.y == 0 && _dashButtomIsActive == false && !IsSlipping)
                 {
                     StopMove();
                 }
@@ -273,9 +348,26 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 _currentStamina = _currentStamina >= _maxStamina ? _maxStamina : _currentStamina + (_staminaRecoverPerSecond * Time.deltaTime);
                 _onStaminaChange?.Invoke();
 
+
                 if (Input.GetKey(KeyCode.LeftShift) && _currentStamina >= _staminaPerOnceDash && !_dashButtomIsActive)
                 {
-                    dashSpeed += _dashSpeed;
+                    Vector3 dashPosition = MyTransform.position + (MyTransform.forward * _dashSpeed);
+                    dashPosition.y = 100;
+                    Ray ray = new Ray(dashPosition, Vector3.down);
+                    Physics.Raycast(ray, out RaycastHit info, 200, _jumpColliderLayer, QueryTriggerInteraction.Ignore);
+
+                    
+                    if (_currentSloppingFlore != null)
+                    {
+                        dashSpeed = 1;
+
+                        MyRigidbody.velocity += (info.point - MyTransform.position).normalized * 3;
+                    }
+                    else
+                    {
+                        dashSpeed += _dashSpeed;
+                    }
+
                     _currentStamina -= _staminaPerOnceDash;
                     _dashButtomIsActive = true;
                     FreezeFalling();
@@ -334,7 +426,34 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
         if (_previousOnFloreState != OnFlore && _previousOnFloreState == false)
             _onFallToFlore?.Invoke();
+
         _previousOnFloreState = OnFlore;
+
+        void Slipping()
+        {
+            Vector3 dir = WalkDirection;
+            dir.y = 0;
+
+            if (IsSlipping)
+            {
+                MyRigidbody.rotation = Quaternion.LookRotation(dir.normalized);
+            }
+
+            if (IsSlipping != _lastIsSlipping)
+            {
+                if (IsSlipping)
+                {
+                    _onSlipping?.Invoke();
+                }
+                else
+                {
+                    _onNotSlipping?.Invoke();
+                }
+
+                _lastIsSlipping = IsSlipping;
+            }
+        }
+        Slipping();
 
         void TryUseNormalSkill()
         {
@@ -378,6 +497,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 _onSkillChange?.Invoke();
             }
         }
+
+        _lastPosition = MyTransform.position;
     }
 
     private bool CheckSkillToCooldown()
