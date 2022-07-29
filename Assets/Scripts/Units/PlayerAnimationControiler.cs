@@ -85,7 +85,7 @@ public class PlayerAnimationControiler : MonoBehaviour
 
     public void SetJump(Rigidbody rigidbody, bool isJump)
     {
-        if (System.Math.Round(rigidbody.velocity.y, 2) == 0)
+        if (System.Math.Round(rigidbody.velocity.y, 2) >= 0 && isJump == false)
         {
             Animator.SetInteger(_jumpStageViewIntName, (int)JumpStage.OnFlore);
             return;
