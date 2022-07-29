@@ -28,7 +28,7 @@ public class SimpleDamageDealer : MonoBehaviour, IDamageDealer
 
 
     //-------METODS
-    public void SetDamage(float damage) 
+    public virtual void SetDamage(float damage) 
     {
         _damage = damage;
     }
