@@ -46,6 +46,7 @@ public class LocalAudioSourceCopy : MonoBehaviour
             else
             {
                 _instance = Instantiate(this);
+                _instance._isInstanceable = false;
                 _instance.Play();
 
                 this.WaitSecond(_instanceLiveTime, delegate { Destroy(_instance.gameObject); });
