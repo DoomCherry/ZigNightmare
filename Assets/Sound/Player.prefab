@@ -467,16 +467,16 @@ AudioSource:
   m_GameObject: {fileID: 1483693462500355831}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -4416105499327155290, guid: 6c81ec373f2cab7449ef4528b4d74fba, type: 2}
+  OutputAudioMixerGroup: {fileID: -5369103709378395831, guid: 6c81ec373f2cab7449ef4528b4d74fba, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 54
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variation:
-  - {fileID: 8300000, guid: 5de6c314633490b4ea97e8f42c96364e, type: 3}
+  - {fileID: 8300000, guid: a85ad3f14c7677c42ae6af3f2ceacadd, type: 3}
 --- !u!1 &2689748495177666190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variation:
-  - {fileID: 8300000, guid: 51605bd5afae1b04691d4062bd6239eb, type: 3}
+  - {fileID: 8300000, guid: f1c0031d47b96cd4d9010b5897b0de15, type: 3}
 --- !u!1 &6191394854765082468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variation:
-  - {fileID: 8300000, guid: 847a42f18ce238f4aaf7c3d4a012662e, type: 3}
+  - {fileID: 8300000, guid: e190c8bc87dee794db0e5cb4f196523e, type: 3}
 --- !u!1 &6191394854818777381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variation:
-  - {fileID: 8300000, guid: dae0f4b76e31db34d839c0057d6f835d, type: 3}
+  - {fileID: 8300000, guid: a69f4861f6e056e4db20782f8cafaad1, type: 3}
 --- !u!1 &6191394855032858519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,7 +1561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variation:
-  - {fileID: 8300000, guid: 256e94e53627cc5499276685109b81f8, type: 3}
+  - {fileID: 8300000, guid: 7af453441add5d248a85604877e7f6ef, type: 3}
 --- !u!1 &6191394855049817144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,7 +1987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variation:
-  - {fileID: 8300000, guid: 2e579ff0044d41947a7c11dd8d9298fd, type: 3}
+  - {fileID: 8300000, guid: ec4813f4076706745971c6f8f4469b9b, type: 3}
 --- !u!1 &6191394855287353962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _variation:
-  - {fileID: 8300000, guid: f062480094d6dfe46b8e5717cd94bd98, type: 3}
+  - {fileID: 8300000, guid: 5a0af7882a546434890b082388f6dfea, type: 3}
 --- !u!1 &6191394855824630382
 GameObject:
   m_ObjectHideFlags: 0
