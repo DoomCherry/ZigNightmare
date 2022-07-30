@@ -33,7 +33,7 @@ MonoBehaviour:
     grabSpeed: 0
     stopDistance: 0
   blastInfo:
-    blastDamage: 200
+    blastDamage: 150
     blastPrepareTime: 1
     blastPushingForce: 20
     blastEnemyLimits: 25

@@ -23,8 +23,8 @@ MonoBehaviour:
     waitToShoting: 0
     shotSpeed: 0
   cenaPunchInfo:
-    punchDamage: 150
-    maxWaitingTime: 1
+    punchDamage: 250
+    maxWaitingTime: 2
     punchSpeed: 2
   downScorpionInfo:
     damagePerUnit: 0

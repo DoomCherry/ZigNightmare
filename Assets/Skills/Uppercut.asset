@@ -44,7 +44,7 @@ MonoBehaviour:
     uppercutPushingForce: 5
     uppercutEnemyLimits: 25
     uppercutLimitTime: 0.5
-    powerUppercutDamage: 100
+    powerUppercutDamage: 150
     powerUppercutUpVelocity: 30
     powerUppercutPushingForce: 12
     powerUppercutEnemyLimits: 25
