@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e030854898bd8554ba34da6c9c9ec3ce, type: 3}
   m_Name: Uppercut
   m_EditorClassIdentifier: 
-  _icon: {fileID: 5543941588292853863, guid: af498e39b4deb0e4fa0775a4e5f9c999, type: 3}
+  _icon: {fileID: 1202984965197363600, guid: c80a9252c91abc847ac3be3a9342ee99, type: 3}
   _name: 4
   coldown: 3
   minigunInfo:

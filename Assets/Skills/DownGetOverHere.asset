@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e030854898bd8554ba34da6c9c9ec3ce, type: 3}
   m_Name: DownGetOverHere
   m_EditorClassIdentifier: 
-  _icon: {fileID: 1161201145128540330, guid: af498e39b4deb0e4fa0775a4e5f9c999, type: 3}
+  _icon: {fileID: 5543941588292853863, guid: c80a9252c91abc847ac3be3a9342ee99, type: 3}
   _name: 2
   coldown: 3
   minigunInfo:
@@ -21,9 +21,11 @@ MonoBehaviour:
     shotingTime: 3
     bulletSpeed: 20
     waitToShoting: 0
+    shotSpeed: 0
   cenaPunchInfo:
     punchDamage: 0
     maxWaitingTime: 0
+    punchSpeed: 0
   downScorpionInfo:
     damagePerUnit: 15
     maxDistance: 20
@@ -32,3 +34,19 @@ MonoBehaviour:
     stopDistance: 1
   blastInfo:
     blastDamage: 0
+    blastPrepareTime: 0
+    blastPushingForce: 0
+    blastEnemyLimits: 0
+    blastLimitTime: 0
+  uppercutInfo:
+    uppercutDamage: 0
+    uppercutUpVelocity: 0
+    uppercutPushingForce: 0
+    uppercutEnemyLimits: 0
+    uppercutLimitTime: 0
+    powerUppercutDamage: 0
+    powerUppercutUpVelocity: 0
+    powerUppercutPushingForce: 0
+    powerUppercutEnemyLimits: 0
+    powerUppercutLimitTime: 0
+    chargeTime: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: af498e39b4deb0e4fa0775a4e5f9c999
+guid: c80a9252c91abc847ac3be3a9342ee99
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -121,30 +121,14 @@ TextureImporter:
       name: Icons_0
       rect:
         serializedVersion: 2
-        x: 431
-        y: 273
-        width: 63
-        height: 64
+        x: 67
+        y: 178
+        width: 113
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -35, y: -34.5}
-        - {x: -35, y: 31.5}
-        - {x: 29, y: 31.5}
-        - {x: 29, y: -34.5}
-      - - {x: -405, y: 198.5}
-        - {x: -405, y: 262.5}
-        - {x: -341, y: 262.5}
-        - {x: -341, y: 198.5}
-      - - {x: 46, y: -188.5}
-        - {x: 46, y: -125.5}
-        - {x: 110, y: -125.5}
-        - {x: 110, y: -188.5}
-      - - {x: -252, y: -113.5}
-        - {x: -252, y: -51.5}
-        - {x: -189, y: -51.5}
-        - {x: -189, y: -113.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -158,12 +142,12 @@ TextureImporter:
       name: Icons_1
       rect:
         serializedVersion: 2
-        x: 138
-        y: 506
-        width: 63
-        height: 63
+        x: 228
+        y: 179
+        width: 112
+        height: 113
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,12 +163,12 @@ TextureImporter:
       name: Icons_2
       rect:
         serializedVersion: 2
-        x: 511
-        y: 118
-        width: 64
-        height: 64
+        x: 400
+        y: 180
+        width: 112
+        height: 112
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +184,12 @@ TextureImporter:
       name: Icons_3
       rect:
         serializedVersion: 2
-        x: 213
-        y: 191
-        width: 63
-        height: 63
+        x: 227
+        y: 25
+        width: 113
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,10 +205,10 @@ TextureImporter:
       name: Icons_4
       rect:
         serializedVersion: 2
-        x: 135
-        y: 33
-        width: 64
-        height: 64
+        x: 67
+        y: 26
+        width: 112
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,7 +225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3920f0c016b770e4bbc25afd6eeaf28e
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

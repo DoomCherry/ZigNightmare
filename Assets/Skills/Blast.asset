@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e030854898bd8554ba34da6c9c9ec3ce, type: 3}
   m_Name: Blast
   m_EditorClassIdentifier: 
-  _icon: {fileID: 184950751378207249, guid: af498e39b4deb0e4fa0775a4e5f9c999, type: 3}
+  _icon: {fileID: 184950751378207249, guid: c80a9252c91abc847ac3be3a9342ee99, type: 3}
   _name: 3
   coldown: 6
   minigunInfo:
