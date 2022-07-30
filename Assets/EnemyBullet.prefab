@@ -478,7 +478,7 @@ MonoBehaviour:
   _damagableTarget:
     serializedVersion: 2
     m_Bits: 16512
-  _damage: 15
+  _damage: 1
 --- !u!1 &8858529182799446763
 GameObject:
   m_ObjectHideFlags: 0
