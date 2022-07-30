@@ -157,6 +157,22 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     //-------EVENTS
     [SerializeField]
+    private UnityEvent _onDashNotActive;
+    public event UnityAction OnDashNotActive
+    {
+        add => _onDashNotActive.AddListener(value);
+        remove => _onDashNotActive.RemoveListener(value);
+    }
+
+    [SerializeField]
+    private UnityEvent _onSkillNotActive;
+    public event UnityAction OnSkillNotActive
+    {
+        add => _onSkillNotActive.AddListener(value);
+        remove => _onSkillNotActive.RemoveListener(value);
+    }
+
+    [SerializeField]
     private UnityEvent _onUpdate;
     public event UnityAction OnUpdate
     {
@@ -347,6 +363,10 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 _currentStamina = _currentStamina >= _maxStamina ? _maxStamina : _currentStamina + (_staminaRecoverPerSecond * Time.deltaTime);
                 _onStaminaChange?.Invoke();
 
+                if(Input.GetKey(KeyCode.LeftShift) && _currentStamina <= _staminaPerOnceDash)
+                {
+                    _onDashNotActive?.Invoke();
+                }
 
                 if (Input.GetKey(KeyCode.LeftShift) && _currentStamina >= _staminaPerOnceDash && !_dashButtomIsActive)
                 {
@@ -477,6 +497,10 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 {
                     UseNormalSkill();
                 }
+                else
+                {
+                    _onSkillNotActive?.Invoke();
+                }
             }
         }
         TryUseNormalSkill();
@@ -489,6 +513,10 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 {
                     _coldownList.Add(Skill.SkillContainer, Time.time);
                     UseChargingSkill();
+                }
+                else
+                {
+                    _onSkillNotActive?.Invoke();
                 }
             }
 

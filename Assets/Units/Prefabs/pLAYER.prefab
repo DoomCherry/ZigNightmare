@@ -48044,6 +48044,53 @@ Transform:
   m_Father: {fileID: 8936472115897244341}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2554682785555980008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7074049289750439345}
+  - component: {fileID: 6676955365440922404}
+  m_Layer: 7
+  m_Name: DashNoActive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7074049289750439345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554682785555980008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8248337726205169324}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6676955365440922404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554682785555980008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minimalInterval: 0.5
+  _globalSource: {fileID: 0}
+  _isInstanceable: 1
+  _instanceLiveTime: 1
 --- !u!1 &2568992256963483202
 GameObject:
   m_ObjectHideFlags: 0
@@ -57577,6 +57624,53 @@ Transform:
   m_Father: {fileID: 5922831290043447163}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -18.332567, y: 86.83717, z: 89.99999}
+--- !u!1 &6954344938900466220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5111870120012136115}
+  - component: {fileID: 2876290192632483755}
+  m_Layer: 7
+  m_Name: SkillNoActive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5111870120012136115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6954344938900466220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8248337726205169324}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2876290192632483755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6954344938900466220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minimalInterval: 0.5
+  _globalSource: {fileID: 0}
+  _isInstanceable: 1
+  _instanceLiveTime: 1
 --- !u!1 &7008598643020384928
 GameObject:
   m_ObjectHideFlags: 0
@@ -59936,6 +60030,8 @@ Transform:
   - {fileID: 40268233}
   - {fileID: 662021660}
   - {fileID: 19960232}
+  - {fileID: 7074049289750439345}
+  - {fileID: 5111870120012136115}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -60157,6 +60253,36 @@ MonoBehaviour:
   _customAnimator: {fileID: 6627592153890646560}
   _skill: {fileID: 511902386}
   _lookToY: 1
+  _onDashNotActive:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6676955365440922404}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onSkillNotActive:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2876290192632483755}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onUpdate:
     m_PersistentCalls:
       m_Calls: []
@@ -86645,14 +86771,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4a169c32ea7ddb49a6ebdc202c7e487, type: 3}
---- !u!1 &8296172669161339463 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e4a169c32ea7ddb49a6ebdc202c7e487, type: 3}
-  m_PrefabInstance: {fileID: 44376910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5006512734833772628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e4a169c32ea7ddb49a6ebdc202c7e487, type: 3}
+  m_PrefabInstance: {fileID: 44376910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8296172669161339463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e4a169c32ea7ddb49a6ebdc202c7e487, type: 3}
   m_PrefabInstance: {fileID: 44376910}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &227398574

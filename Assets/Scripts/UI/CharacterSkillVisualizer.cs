@@ -1,7 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class CharacterSkillVisualizer : MonoBehaviour
@@ -13,6 +12,19 @@ public class CharacterSkillVisualizer : MonoBehaviour
     private Image _skillIcon;
     [SerializeField]
     private Text _coldown;
+    private float _lastCd;
+
+
+
+
+    //-------EVENTS
+    [SerializeField]
+    private UnityEvent _onSkillCdEnd;
+    public event UnityAction OnSkillCdEnd
+    {
+        add => _onSkillCdEnd.AddListener(value);
+        remove => _onSkillCdEnd.RemoveListener(value);
+    }
 
 
 
@@ -40,6 +52,13 @@ public class CharacterSkillVisualizer : MonoBehaviour
 
         bool isHaveCd = _playerController.ColdownList.TryGetValue(_playerController.Skill.SkillContainer, out float lastTime);
         float currentCd = Time.time - lastTime;
+
+        if (currentCd <= 0 && _lastCd > 0)
+        {
+            _onSkillCdEnd?.Invoke();
+        }
+
+        _lastCd = currentCd;
         _coldown.text = isHaveCd ? (currentCd > _playerController.Skill.SkillContainer.coldown ? "" : Math.Round(_playerController.Skill.SkillContainer.coldown - currentCd,1).ToString()) : "";
     }
 
