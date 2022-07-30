@@ -148,7 +148,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     private DamageController _damageController;
     private SkillStealler _skillStealler;
     private Dictionary<SkillContainer, float> _coldownList = new Dictionary<SkillContainer, float>();
-    private bool _dashButtomIsActive = false;
+    private bool _dashButtomIsActive = false, _isDashing = false;
     private bool _previousOnFloreState = false;
     private bool _lastIsSlipping = false;
 
@@ -249,7 +249,6 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         _main = Camera.main;
     }
 
-
     private void Update()
     {
         _onUpdate?.Invoke();
@@ -330,7 +329,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
             if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A))
             {
-                if (_walkDirection.x == 0 && _walkDirection.y == 0 && _dashButtomIsActive == false && !IsSlipping)
+                if (_walkDirection.x == 0 && _walkDirection.y == 0 && _isDashing == false && !IsSlipping)
                 {
                     StopMove();
                 }
@@ -351,33 +350,39 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
                 if (Input.GetKey(KeyCode.LeftShift) && _currentStamina >= _staminaPerOnceDash && !_dashButtomIsActive)
                 {
-                    Vector3 dashPosition = MyTransform.position + (MyTransform.forward * _dashSpeed);
+                    Vector3 dashPosition = MyTransform.position + (MyTransform.forward);
                     dashPosition.y = 100;
+
                     Ray ray = new Ray(dashPosition, Vector3.down);
                     Physics.Raycast(ray, out RaycastHit info, 200, _jumpColliderLayer, QueryTriggerInteraction.Ignore);
 
-                    
                     if (_currentSloppingFlore != null)
                     {
                         dashSpeed = 1;
-
-                        MyRigidbody.velocity += (info.point - MyTransform.position).normalized * 3;
+                        Vector3 findingInfo = info.point;
+                        MyRigidbody.velocity += (findingInfo - MyTransform.position).normalized * _dashSpeed;
                     }
                     else
                     {
                         dashSpeed += _dashSpeed;
+                        FreezeFalling();
                     }
 
                     _currentStamina -= _staminaPerOnceDash;
                     _dashButtomIsActive = true;
-                    FreezeFalling();
+                    _isDashing = true;
                     _onDash?.Invoke();
                     this.WaitSecond(_dashTime, delegate
                     {
+                        _isDashing = false;
                         UnfreezeFalling();
-                        AfterDashTime();
                         StopMove();
                     });
+                }
+
+                if (Input.GetKeyUp(KeyCode.LeftShift))
+                {
+                    AfterDashTime();
                 }
 
                 void AfterDashTime()
@@ -386,12 +391,13 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 }
 
             }
+
             UseDash();
 
             Vector2 moveNormalize = new Vector2(_walkDirection.x, _walkDirection.z).normalized;
             _walkDirection = new Vector3(moveNormalize.x, _walkDirection.y, moveNormalize.y);
 
-            walkSpeed = _dashButtomIsActive ? Vector3.zero : walkSpeed;
+            walkSpeed = _isDashing ? Vector3.zero : walkSpeed;
 
             MyRigidbody.velocity = new Vector3(
                                     MyRigidbody.velocity.x + (_walkDirection.x * dashSpeed) + (_walkDirection.x * Mathf.Abs(walkSpeed.x)),
@@ -413,12 +419,13 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 }
             }
 
+
             void SetAnimation()
             {
                 Vector3 loockDirection = MyTransform.forward;
                 AnimationControiler.SetMovement(new Vector2(_walkDirection.x, _walkDirection.z), new Vector2(loockDirection.x, loockDirection.z));
                 AnimationControiler.SetJump(MyRigidbody, _walkDirection.y > 0);
-                AnimationControiler.SetDash(_dashButtomIsActive);
+                AnimationControiler.SetDash(_isDashing);
             }
             SetAnimation();
         }
@@ -500,6 +507,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
         _lastPosition = MyTransform.position;
     }
+
 
     private bool CheckSkillToCooldown()
     {
