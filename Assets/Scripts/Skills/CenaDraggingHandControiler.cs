@@ -169,6 +169,9 @@ public class CenaDraggingHandControiler : MonoBehaviour
     {
         if (Animator != null)
             Animator.SetInteger(_cenaDragging.AnimationStateNameInteger, (int)CenaDraggingState.Grab);
+
+        _cenaDragging.Limiter.UnfreezeWalking();
+        _cenaDragging.Limiter.UnfreezeRotation();
     }
 
     private void CheckDragging()
