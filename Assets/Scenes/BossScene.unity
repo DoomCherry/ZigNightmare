@@ -6697,6 +6697,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1081519806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7564163300018731255, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+  m_PrefabInstance: {fileID: 2082572778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1082310345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16995,6 +17000,10 @@ PrefabInstance:
       propertyPath: _globalSource
       value: 
       objectReference: {fileID: 6191394854953446158}
+    - target: {fileID: 511902386, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1106610868, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: _globalSource
       value: 
@@ -17043,6 +17052,10 @@ PrefabInstance:
       propertyPath: _globalSource
       value: 
       objectReference: {fileID: 6191394854953446152}
+    - target: {fileID: 2147288819783090462, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2278089473441670816, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: _globalSource
       value: 
@@ -17075,6 +17088,10 @@ PrefabInstance:
       propertyPath: _globalSource
       value: 
       objectReference: {fileID: 1402525529}
+    - target: {fileID: 7564163300018731255, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7766174403473704030, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: _globalSource
       value: 
@@ -17131,6 +17148,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8248337726205169325, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: _skill
+      value: 
+      objectReference: {fileID: 1081519806}
     - target: {fileID: 8248337726205169326, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: _onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
