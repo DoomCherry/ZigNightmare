@@ -411,11 +411,18 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
                 if (TargetSelector.CurrentTarget != null)
                 {
-                    MyRigidbody.rotation = Quaternion.LookRotation(TargetSelector.CurrentTarget.MyTransform.position - myPositionDir);
+                    Vector3 targetPosition = TargetSelector.CurrentTarget.MyTransform.position;
+                    targetPosition.y = _lookToY;
+
+                    Vector3 dir = (targetPosition - myPositionDir).normalized * 100;
+                    if (dir.x != 0 || dir.z != 0)
+                        MyRigidbody.rotation = Quaternion.LookRotation(dir);
                 }
                 else
                 {
-                    MyRigidbody.rotation = Quaternion.LookRotation((_mousePointInWorld - myPositionDir).normalized * 100);
+                    Vector3 dir = (_mousePointInWorld - myPositionDir).normalized * 100;
+                    if (dir.x != 0 || dir.z != 0)
+                        MyRigidbody.rotation = Quaternion.LookRotation(dir);
                 }
             }
 
@@ -495,9 +502,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         if (Input.GetKey(KeyCode.Mouse1))
         {
             ISkill newSkill = MySkillStealler.GetTargetSkill();
-            if (newSkill != null)
+            if (newSkill != null && !Skill.IsSkillActive)
             {
-
+                Skill.Stop();
                 _skill.gameObject.SetActive(false);
                 _skill = newSkill.Self;
                 _skill.gameObject.SetActive(true);
