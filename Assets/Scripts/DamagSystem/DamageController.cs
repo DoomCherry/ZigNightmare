@@ -73,6 +73,14 @@ public class DamageController : MonoBehaviour
         remove => _onTakeDamage.RemoveListener(value);
     }
 
+    [SerializeField]
+    private UnityEvent _onTakeHeal;
+    public event UnityAction OnTakeHeal
+    {
+        add => _onTakeHeal.AddListener(value);
+        remove => _onTakeHeal.RemoveListener(value);
+    }
+
 
 
 
@@ -97,7 +105,11 @@ public class DamageController : MonoBehaviour
             _onDeath?.Invoke();
         }
 
-        _onTakeDamage?.Invoke();
+        if (damage > 0)
+            _onTakeDamage?.Invoke();
+
+        if (damage < 0)
+            _onTakeHeal?.Invoke();
     }
 
     public void SetMaxHp(float hp, bool isFitCurrentHp = true)

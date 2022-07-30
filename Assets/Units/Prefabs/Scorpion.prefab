@@ -420,6 +420,53 @@ Transform:
   m_Father: {fileID: 2868426104983281085}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -8.326309, y: -89.90709, z: -77.14331}
+--- !u!1 &753548715924436259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5906680391704994249}
+  - component: {fileID: 6207537363588232221}
+  m_Layer: 8
+  m_Name: OnDeath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5906680391704994249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753548715924436259}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -2.4700005, y: 0, z: 6.9200006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322423257469695302}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6207537363588232221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753548715924436259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minimalInterval: 1
+  _globalSource: {fileID: 0}
+  _isInstanceable: 1
+  _instanceLiveTime: 2
 --- !u!1 &840138395698936006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,8 +1082,8 @@ RectTransform:
   m_Father: {fileID: 1322423256829952056}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.45200002, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.0000076293945, y: 0}
   m_SizeDelta: {x: 21.047, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1110,8 +1157,8 @@ RectTransform:
   m_Father: {fileID: 1322423257996837789}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.45200002, y: 0}
+  m_AnchorMax: {x: 0.45200002, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1383,7 +1430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1322423257469695302
 Transform:
   m_ObjectHideFlags: 0
@@ -1401,6 +1448,7 @@ Transform:
   - {fileID: 6097157880929315241}
   - {fileID: 5581797813589884455}
   - {fileID: 3485684125324706344}
+  - {fileID: 5906680391704994249}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -1473,6 +1521,18 @@ MonoBehaviour:
   _onDeath:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 6207537363588232221}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7710757305457576981}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
@@ -1500,6 +1560,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onTakeHeal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1322423257469695322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,6 +1591,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onTakeHeal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &1322423257469695323
 Animator:
   serializedVersion: 3
@@ -1577,6 +1643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3fc5eaf8c946f4c84a1e16d73c9bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onDestroyEffect: {fileID: 9040600245597042968, guid: 6927e3e5e58f51440ae35b2de8491bef, type: 3}
   _customAnimator: {fileID: 4841551413263193694}
   _unitContainer: {fileID: 11400000, guid: 3864936cc0f026942a393f97ae374045, type: 2}
   _prepareTriggerName: PrepareToSkill

@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4958691215055927707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3959820668924366122}
+  - component: {fileID: 6599447671042381497}
+  m_Layer: 8
+  m_Name: OnDeath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3959820668924366122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958691215055927707}
+  m_LocalRotation: {x: 0.44626948, y: 0.16126831, z: 0.7696138, w: 0.42723614}
+  m_LocalPosition: {x: -1.8105581, y: 1.1218288, z: -5.7200847}
+  m_LocalScale: {x: 0.33333334, y: 0.33333328, z: 0.33333337}
+  m_Children: []
+  m_Father: {fileID: 6977406090242743558}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6599447671042381497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958691215055927707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minimalInterval: 1
+  _globalSource: {fileID: 0}
+  _isInstanceable: 1
+  _instanceLiveTime: 2
 --- !u!1 &7448391529582291397
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +555,7 @@ GameObject:
   - component: {fileID: 8707108318972425119}
   - component: {fileID: 4799722820862180295}
   - component: {fileID: 2934662754288425420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Crate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,9 +571,10 @@ Transform:
   m_GameObject: {fileID: 7755033028616816572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.7, y: 1.12, z: -13.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 7448391529592321109}
+  - {fileID: 3959820668924366122}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -652,8 +700,23 @@ MonoBehaviour:
       m_Calls: []
   _onDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6599447671042381497}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTakeHeal:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &8707108318972425119
@@ -668,6 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9e8061b735ae44d99619fd5a87b6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onDestroyEffect: {fileID: 9040600245597042968, guid: 6927e3e5e58f51440ae35b2de8491bef, type: 3}
   _customAnimator: {fileID: 0}
   _unitContainer: {fileID: 11400000, guid: b4bb780afd83ed344828eb2667d65b81, type: 2}
   _prepareTriggerName: PrepareToSkill
@@ -707,5 +771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _customCharacterLimiter: {fileID: 0}
   _onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTakeHeal:
     m_PersistentCalls:
       m_Calls: []

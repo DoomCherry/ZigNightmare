@@ -154,9 +154,12 @@ public class Uppercut : MonoBehaviour, ISkill
                 _skillIsActive = true;
                 _charging = this.WaitSecond(_skillContainer.uppercutInfo.chargeTime, 
                     delegate 
-                    { 
-                        _punchIsPower = true; 
-                        _onChargeFinish?.Invoke(); 
+                    {
+                        if (_skillIsActive)
+                        {
+                            _punchIsPower = true;
+                            _onChargeFinish?.Invoke();
+                        }
                     });
                 _onCharging?.Invoke();
                 break;

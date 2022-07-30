@@ -233,7 +233,7 @@ public class BottomDraggingHandControiler : MonoBehaviour
             //if (CheckDraggingIsDestroy())
             //    break;
 
-            targets = Physics.OverlapBox(MyCollider.bounds.center, MyCollider.bounds.extents / 2, Quaternion.identity, _bottomDragging.TargetLayer)
+            targets = Physics.OverlapBox(MyCollider.bounds.center, MyCollider.bounds.extents / 2, Quaternion.identity, _bottomDragging.TargetLayer, QueryTriggerInteraction.Ignore)
                              .Select(n => n.GetComponent<ICharacterLimiter>()).ToArray();
             isCollide = targets.Length > 0;
             Vector3 lockTo = target.MyTransform.position - MyTransform.position;

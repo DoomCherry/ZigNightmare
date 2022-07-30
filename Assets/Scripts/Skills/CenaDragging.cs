@@ -137,6 +137,7 @@ public class CenaDragging : MonoBehaviour, ISkill
     {
         Limiter.UnfreezeWalking();
         Limiter.UnfreezeRotation();
-        _instance.Stop();
+        if (_instance != null)
+            _instance.Stop();
     }
 }

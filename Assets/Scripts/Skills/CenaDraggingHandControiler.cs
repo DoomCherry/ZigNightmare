@@ -102,7 +102,7 @@ public class CenaDraggingHandControiler : MonoBehaviour
         while (time < _cenaDragging.MaxWaitingTime)
         {
             CheckDragging();
-            ICharacterLimiter[] targets = Physics.OverlapBox(MyCollider.bounds.center, MyCollider.bounds.extents / 2, Quaternion.identity, _cenaDragging.TargetLayer)
+            ICharacterLimiter[] targets = Physics.OverlapBox(MyCollider.bounds.center, MyCollider.bounds.extents / 2, Quaternion.identity, _cenaDragging.TargetLayer,QueryTriggerInteraction.Ignore)
                                          .Select(n => n.GetComponent<ICharacterLimiter>()).ToArray();
 
             if (targets.Length > 0)

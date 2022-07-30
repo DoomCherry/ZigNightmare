@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e030854898bd8554ba34da6c9c9ec3ce, type: 3}
   m_Name: EmptySkill
   m_EditorClassIdentifier: 
-  _icon: {fileID: 0}
+  _icon: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   _name: 0
   coldown: 0
   minigunInfo:

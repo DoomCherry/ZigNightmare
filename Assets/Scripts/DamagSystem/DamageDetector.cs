@@ -30,6 +30,14 @@ public class DamageDetector : MonoBehaviour
         remove => _onTakeDamage.RemoveListener(value);
     }
 
+    [SerializeField]
+    private UnityEvent<float> _onTakeHeal;
+    public event UnityAction<float> OnTakeHeal
+    {
+        add => _onTakeHeal.AddListener(value);
+        remove => _onTakeHeal.RemoveListener(value);
+    }
+
 
 
 
@@ -52,7 +60,13 @@ public class DamageDetector : MonoBehaviour
             int currentLayer = gameObject.layer;
 
             if (binary.Length > currentLayer && binary[currentLayer] == '1')
-                _onTakeDamage?.Invoke(dealer.Damage);
+            {
+                if (dealer.Damage > 0)
+                    _onTakeDamage?.Invoke(dealer.Damage);
+
+                if (dealer.Damage < 0)
+                    _onTakeHeal?.Invoke(dealer.Damage);
+            }
         }
     }
 
@@ -70,7 +84,7 @@ public class DamageDetector : MonoBehaviour
                         Limiter.FreezeWalking();
                     else
                         Limiter.UnfreezeWalking();
-                        break;
+                    break;
                 case Limits.Falling:
                     if (isActive)
                         Limiter.FreezeFalling();
@@ -111,7 +125,7 @@ public class DamageDetector : MonoBehaviour
         }
         SetLimits(true);
 
-        if(_waitLimits != null)
+        if (_waitLimits != null)
         {
             StopCoroutine(_waitLimits);
             _waitLimits = null;

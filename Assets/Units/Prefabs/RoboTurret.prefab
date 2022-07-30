@@ -1620,8 +1620,8 @@ RectTransform:
   m_Father: {fileID: 2254840373241727031}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.45200002, y: 0}
+  m_AnchorMax: {x: 0.45200002, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1731,8 +1731,8 @@ RectTransform:
   m_Father: {fileID: 2254840372262150475}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.45200002, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.0000076293945, y: 0}
   m_SizeDelta: {x: 21.047, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2121,6 +2121,53 @@ Transform:
   m_Father: {fileID: 7073771224147883648}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2493104271143205957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8398676377189307400}
+  - component: {fileID: 6155816900072475111}
+  m_Layer: 8
+  m_Name: OnDeath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8398676377189307400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2493104271143205957}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04379999, y: -0.011500001, z: -0.13340001}
+  m_LocalScale: {x: 0.020000001, y: 0.020000001, z: 0.020000001}
+  m_Children: []
+  m_Father: {fileID: 5364306971926244304}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6155816900072475111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2493104271143205957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minimalInterval: 1
+  _globalSource: {fileID: 0}
+  _isInstanceable: 1
+  _instanceLiveTime: 2
 --- !u!1 &2679329092516133022
 GameObject:
   m_ObjectHideFlags: 0
@@ -8625,7 +8672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5364306971926244304
 Transform:
   m_ObjectHideFlags: 0
@@ -8643,6 +8690,7 @@ Transform:
   - {fileID: 7019328056417876432}
   - {fileID: 984632530}
   - {fileID: 6197727398879674907}
+  - {fileID: 8398676377189307400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8677,6 +8725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37c566ad466116f4c8c7e54879decbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onDestroyEffect: {fileID: 9040600245597042968, guid: 6927e3e5e58f51440ae35b2de8491bef, type: 3}
   _customAnimator: {fileID: 4129882327218713112}
   _unitContainer: {fileID: 11400000, guid: f55f88209f54ed4488504cca329daf3c, type: 2}
   _prepareTriggerName: PrepareToSkill
@@ -8788,6 +8837,18 @@ MonoBehaviour:
   _onDeath:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 6155816900072475111}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 984632531}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
@@ -8815,6 +8876,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onTakeHeal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &4700078410819498345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8872,6 +8936,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onTakeHeal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5180088894517975693
 MonoBehaviour:
   m_ObjectHideFlags: 0

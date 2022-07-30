@@ -16,7 +16,7 @@ public class LocalAudioSourceCopy : MonoBehaviour
 
     private SoundArray _localSource;
     private float _lastTimeUse = 0;
-    private LocalAudioSourceCopy _instance;
+    private List<LocalAudioSourceCopy> _instance = new List<LocalAudioSourceCopy>();
 
 
 
@@ -45,11 +45,20 @@ public class LocalAudioSourceCopy : MonoBehaviour
             }
             else
             {
-                _instance = Instantiate(this);
-                _instance._isInstanceable = false;
-                _instance.Play();
+                LocalAudioSourceCopy instance = Instantiate(this);
+                instance._isInstanceable = false;
+                instance.Play();
+                _instance.Add(instance);
 
-                this.WaitSecond(_instanceLiveTime, delegate { Destroy(_instance.gameObject); });
+                this.WaitSecond(_instanceLiveTime,
+                    delegate
+                {
+                    instance.Stop();
+                    _instance.Remove(instance);
+                    Destroy(instance.gameObject);
+                });
+
+                _lastTimeUse = Time.time;
             }
         }
 
@@ -58,5 +67,10 @@ public class LocalAudioSourceCopy : MonoBehaviour
     public void Pause()
     {
         _localSource.Pause();
+    }
+
+    public void Stop()
+    {
+        _localSource.Stop();
     }
 }

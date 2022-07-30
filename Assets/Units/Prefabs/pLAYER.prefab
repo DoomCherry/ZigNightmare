@@ -11009,6 +11009,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 482032301048692301}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onPowerUppercutting:
     m_PersistentCalls:
       m_Calls:
@@ -11075,6 +11087,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1994009126296259509}
         m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 482032301048692301}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29084,10 +29108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minimalInterval: 0.3
+  _minimalInterval: 0.5
   _globalSource: {fileID: 0}
-  _isInstanceable: 0
-  _instanceLiveTime: 0.5
+  _isInstanceable: 1
+  _instanceLiveTime: 1
 --- !u!1 &2063734251
 GameObject:
   m_ObjectHideFlags: 0
@@ -45324,8 +45348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targeter: {fileID: 8248337726205169327}
   _flollowTo: {fileID: 8248337726205169324}
-  _speed: 0.2
-  _hideDistance: 1
+  _speed: 0.4
+  _hideDistance: 2
   _followYAdditionalPosition: 1
 --- !u!1 &887013613676256934
 GameObject:
@@ -60060,6 +60084,21 @@ MonoBehaviour:
         m_CallState: 2
   _onTakeDamage:
     m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2039422045}
+        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTakeHeal:
+    m_PersistentCalls:
       m_Calls: []
 --- !u!114 &8248337726205169327
 MonoBehaviour:
@@ -60340,19 +60379,10 @@ MonoBehaviour:
   _customCharacterLimiter: {fileID: 0}
   _onTakeDamage:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2039422045}
-        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  _onTakeHeal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8248337726426799054
 GameObject:
   m_ObjectHideFlags: 0

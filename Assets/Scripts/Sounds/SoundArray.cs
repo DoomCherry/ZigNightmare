@@ -46,4 +46,9 @@ public class SoundArray : MonoBehaviour
     {
         Audio.Pause();
     }
+
+    public void Stop()
+    {
+        Audio.Stop();
+    }
 }
