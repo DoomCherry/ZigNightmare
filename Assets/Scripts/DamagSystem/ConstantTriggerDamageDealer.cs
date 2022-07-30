@@ -39,7 +39,8 @@ public class ConstantTriggerDamageDealer : SimpleDamageDealer
 
     public override void SetDamage(float damage)
     {
-        IEnumerable<DamageDetector> detectors = Physics.OverlapSphere(Collider.bounds.center, Collider.bounds.extents.x).Select(n => n.gameObject.GetComponent<DamageDetector>()).Where(n => n != null && n != _selfDetector);
+        IEnumerable<DamageDetector> detectors = Physics.OverlapBox(Collider.bounds.center, Collider.bounds.extents / 2, Quaternion.identity, DamagableTarget,QueryTriggerInteraction.Ignore)
+            .Select(n => n.gameObject.GetComponent<DamageDetector>()).Where(n => n != null && n != _selfDetector);
 
         if (detectors.Count() > 0)
         {

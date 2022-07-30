@@ -100,6 +100,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     //-------FIELD
     [SerializeField]
+    private float _maxSkillStealDistance = 10;
+
+    [SerializeField]
     private int _slopingFloreLayer;
     [SerializeField]
     private SphereCollider _groundTestCollider;
@@ -151,6 +154,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     private bool _dashButtomIsActive = false, _isDashing = false;
     private bool _previousOnFloreState = false;
     private bool _lastIsSlipping = false;
+    private List<Vector3> _lastOnFlorePoints = new List<Vector3>();
+    private int _maxOnFlorePoint = 20;
 
 
 
@@ -267,6 +272,14 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     private void Update()
     {
+        if (OnFlore)
+        {
+            if (_lastOnFlorePoints.Count > _maxOnFlorePoint)
+                _lastOnFlorePoints.RemoveAt(0);
+
+            _lastOnFlorePoints.Add(MyTransform.position);
+        }
+
         _onUpdate?.Invoke();
 
         void Move()
@@ -363,7 +376,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 _currentStamina = _currentStamina >= _maxStamina ? _maxStamina : _currentStamina + (_staminaRecoverPerSecond * Time.deltaTime);
                 _onStaminaChange?.Invoke();
 
-                if(Input.GetKey(KeyCode.LeftShift) && _currentStamina <= _staminaPerOnceDash)
+                if (Input.GetKey(KeyCode.LeftShift) && _currentStamina <= _staminaPerOnceDash)
                 {
                     _onDashNotActive?.Invoke();
                 }
@@ -529,21 +542,31 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
         if (Input.GetKey(KeyCode.Mouse1))
         {
-            ISkill newSkill = MySkillStealler.GetTargetSkill();
-            if (newSkill != null && !Skill.IsSkillActive)
+            if (TargetSelector.CurrentTarget != null)
             {
-                Skill.Stop();
-                _skill.gameObject.SetActive(false);
-                _skill = newSkill.Self;
-                _skill.gameObject.SetActive(true);
-                _onSkillChange?.Invoke();
+                if (Vector3.Distance(TargetSelector.CurrentTarget.MyTransform.position, MyTransform.position) < _maxSkillStealDistance)
+                {
+                    ISkill newSkill = MySkillStealler.GetTargetSkill();
+                    if (newSkill != null && !Skill.IsSkillActive)
+                    {
+                        Skill.Stop();
+                        _skill.gameObject.SetActive(false);
+                        _skill = newSkill.Self;
+                        _skill.gameObject.SetActive(true);
+                        _onSkillChange?.Invoke();
+                    }
+                }
             }
         }
 
         _lastPosition = MyTransform.position;
     }
 
-
+    public void ReturnLastFlorePoint()
+    {
+        MyRigidbody.position = _lastOnFlorePoints[0];
+        MyRigidbody.velocity = Vector3.zero;
+    }
     private bool CheckSkillToCooldown()
     {
         if (!_coldownList.TryGetValue(Skill.SkillContainer, out float lastTime))

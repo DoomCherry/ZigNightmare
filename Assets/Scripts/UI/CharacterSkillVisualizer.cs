@@ -1,40 +1,45 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class CharacterSkillVisualizer : MonoBehaviour
 {
+    //-------PROPERTY
+    private ITarget ITarget => _iTarget = _iTarget ??= _iTargetSkillContainer.GetComponent<ITarget>();
+
+
+
+
     //-------FIELD
     [SerializeField]
-    private PlayerContorller _playerController;
+    private GameObject _iTargetSkillContainer;
     [SerializeField]
     private Image _skillIcon;
-    [SerializeField]
-    private Text _coldown;
-    private float _lastCd;
+    [HideInInspector, SerializeField]
+    private ITarget _iTarget;
 
 
 
 
     //-------EVENTS
-    [SerializeField]
-    private UnityEvent _onSkillCdEnd;
-    public event UnityAction OnSkillCdEnd
-    {
-        add => _onSkillCdEnd.AddListener(value);
-        remove => _onSkillCdEnd.RemoveListener(value);
-    }
 
 
 
 
     //-------METODS
+    private void OnValidate()
+    {
+        if (_iTargetSkillContainer.GetComponent<ITarget>() == null)
+            _iTargetSkillContainer = null;
+    }
+
     private void Start()
     {
-        if (_playerController == null)
+        if (_iTargetSkillContainer == null)
         {
-            Debug.LogWarning($"{name}: {_playerController} is missing!");
+            Debug.LogWarning($"{name}: {_iTargetSkillContainer} is missing!");
             return;
         }
 
@@ -48,18 +53,6 @@ public class CharacterSkillVisualizer : MonoBehaviour
 
     private void RefreshSkill()
     {
-        _skillIcon.sprite = _playerController.Skill.SkillContainer._icon;
-
-        bool isHaveCd = _playerController.ColdownList.TryGetValue(_playerController.Skill.SkillContainer, out float lastTime);
-        float currentCd = Time.time - lastTime;
-
-        if (currentCd <= 0 && _lastCd > 0)
-        {
-            _onSkillCdEnd?.Invoke();
-        }
-
-        _lastCd = currentCd;
-        _coldown.text = isHaveCd ? (currentCd > _playerController.Skill.SkillContainer.coldown ? "" : Math.Round(_playerController.Skill.SkillContainer.coldown - currentCd,1).ToString()) : "";
+        _skillIcon.sprite = ITarget.Skill.SkillContainer._icon;
     }
-
 }

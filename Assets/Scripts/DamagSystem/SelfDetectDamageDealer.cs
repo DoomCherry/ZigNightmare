@@ -29,7 +29,7 @@ public class SelfDetectDamageDealer : SimpleDamageDealer
         _limitTime = limitTime;
         _pushPower = pushPower;
 
-        IEnumerable<DamageDetector> detectors = Physics.OverlapSphere(Collider.bounds.center, Collider.bounds.size.magnitude).Select(n => n.gameObject.GetComponent<DamageDetector>()).Where(n => n != null && n != _selfDetector);
+        IEnumerable<DamageDetector> detectors = Physics.OverlapSphere(Collider.bounds.center, Collider.bounds.size.magnitude / transform.lossyScale.x).Select(n => n.gameObject.GetComponent<DamageDetector>()).Where(n => n != null && n != _selfDetector);
 
         if (detectors.Count() > 0)
         {
