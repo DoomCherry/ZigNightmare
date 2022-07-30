@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LocalAudioSourceCopy : MonoBehaviour
@@ -13,6 +14,7 @@ public class LocalAudioSourceCopy : MonoBehaviour
     private bool _isInstanceable = false;
     [SerializeField]
     private float _instanceLiveTime = 0.5f;
+    private float _liveTime = -1;
 
     private SoundArray _localSource;
     private float _lastTimeUse = 0;
@@ -48,20 +50,26 @@ public class LocalAudioSourceCopy : MonoBehaviour
                 LocalAudioSourceCopy instance = Instantiate(this);
                 instance._isInstanceable = false;
                 instance.Play();
-                _instance.Add(instance);
+                instance.SetLiveTime(_instanceLiveTime);
 
-                this.WaitSecond(_instanceLiveTime,
-                    delegate
-                {
-                    instance.Stop();
-                    _instance.Remove(instance);
-                    Destroy(instance.gameObject);
-                });
+                _instance = _instance.Where(n => n != null).ToList();
+
+                _instance.Add(instance);
 
                 _lastTimeUse = Time.time;
             }
         }
 
+    }
+
+    private void SetLiveTime(float time)
+    {
+        this.WaitSecond(time,
+                    delegate
+                    {
+                        Stop();
+                        Destroy(gameObject);
+                    });
     }
 
     public void Pause()

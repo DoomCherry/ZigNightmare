@@ -43,7 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minimalInterval: 0.3
   _globalSource: {fileID: 0}
+  _isInstanceable: 0
+  _instanceLiveTime: 0.5
 --- !u!1 &1422600647041942278
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +103,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422600647041942278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -161,19 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onShot:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8422604515686287388}
-        m_TargetAssemblyTypeName: LocalAudioSourceCopy, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onHitPlayer:
     m_PersistentCalls:
       m_Calls:
@@ -219,6 +210,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _bulletLive: 5
+  _collideLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!54 &8868917666970824887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -247,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d3f80a43616d9489ecf76707af6ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _customCollider: {fileID: 0}
   _damagableTarget:
     serializedVersion: 2
     m_Bits: 768
@@ -294,7 +290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minimalInterval: 0.3
   _globalSource: {fileID: 0}
+  _isInstanceable: 0
+  _instanceLiveTime: 0.5
 --- !u!1 &3178358086144375777
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minimalInterval: 0.3
   _globalSource: {fileID: 0}
+  _isInstanceable: 1
+  _instanceLiveTime: 0.5
 --- !u!1 &8611496296485463809
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,4 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minimalInterval: 0.3
   _globalSource: {fileID: 0}
+  _isInstanceable: 0
+  _instanceLiveTime: 0.5

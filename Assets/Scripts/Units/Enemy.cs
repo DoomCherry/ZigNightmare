@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour, ITarget, ICharacterLimiter
 
     //-------FIELD
     [SerializeField]
-    private ParticleSystem _onDestroyEffect;
+    private GameObject _onDestroyEffect;
 
     [SerializeField]
     private Animator _customAnimator;
@@ -145,10 +145,9 @@ public class Enemy : MonoBehaviour, ITarget, ICharacterLimiter
 
         if(_onDestroyEffect != null)
         {
-            ParticleSystem effect = Instantiate(_onDestroyEffect);
+            GameObject effect = Instantiate(_onDestroyEffect);
             effect.gameObject.SetActive(true);
             effect.transform.position = MyTransform.position;
-            effect.Play();
         }    
     }
     protected virtual void ActivateSkill()

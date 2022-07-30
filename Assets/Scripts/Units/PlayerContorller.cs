@@ -567,8 +567,6 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     public void FreezeWalking()
     {
-        if (Skill != null)
-            Skill.Stop();
         WalkingIsFreeze = true;
     }
 
@@ -579,6 +577,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     public void FreezeSkill()
     {
+        if (Skill != null)
+            Skill.Stop();
         SkillsIsFreeze = true;
     }
 

@@ -64,6 +64,8 @@ public class Bullet : MonoBehaviour
 
     //-------FIELD
     [SerializeField]
+    private float _bulletLive = 5;
+    [SerializeField]
     private LayerMask _collideLayers;
     private SimpleDamageDealer _damageDealer;
     private Rigidbody _rigidbody;
@@ -75,6 +77,12 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         _onShot?.Invoke();
+
+        this.WaitSecond(_bulletLive, 
+            delegate
+            {
+                Destroy(gameObject);
+            });
     }
 
     public void ShotDirection(Vector3 direction, float power)

@@ -731,7 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9e8061b735ae44d99619fd5a87b6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onDestroyEffect: {fileID: 9040600245597042968, guid: 6927e3e5e58f51440ae35b2de8491bef, type: 3}
+  _onDestroyEffect: {fileID: 9040600245597042971, guid: 6927e3e5e58f51440ae35b2de8491bef, type: 3}
   _customAnimator: {fileID: 0}
   _unitContainer: {fileID: 11400000, guid: b4bb780afd83ed344828eb2667d65b81, type: 2}
   _prepareTriggerName: PrepareToSkill
