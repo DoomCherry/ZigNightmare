@@ -245,6 +245,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
 
     //-------METODS
+
     private void OnValidate()
     {
         if (_skill.GetComponent<ISkill>() == null)
@@ -285,12 +286,11 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         void Move()
         {
             Ray ray = _main.ScreenPointToRay(Input.mousePosition);
-
             LinearFunction3 line = new LinearFunction3(ray.origin * -1, ray.direction);
 
             if (!WalkingIsFreeze)
             {
-                _mousePointInWorld = line.GetCoordsFromProjectionY(0);
+                _mousePointInWorld = line.GetCoordsFromProjectionY(MyTransform.position.y);
                 _mousePointInWorld.y = _lookToY;
             }
 
@@ -450,12 +450,15 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                     Vector3 dir = (targetPosition - myPositionDir).normalized * 100;
                     if (dir.x != 0 || dir.z != 0)
                         MyRigidbody.rotation = Quaternion.LookRotation(dir);
+
                 }
                 else
                 {
-                    Vector3 dir = (_mousePointInWorld - myPositionDir).normalized * 100;
+                    Vector3 dir = (_mousePointInWorld - myPositionDir).normalized;
+
                     if (dir.x != 0 || dir.z != 0)
                         MyRigidbody.rotation = Quaternion.LookRotation(dir);
+
                 }
             }
 

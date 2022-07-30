@@ -1,0 +1,295 @@
+fileFormatVersion: 2
+guid: 278d1af54ee26234cb0476e00fe5a0c1
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -623603649343465320
+    second: Scene
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 1floor_enter.003
+    second: {fileID: 2100000, guid: e398341c96bcbc1418ac804a49290f42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floors_wind.006
+    second: {fileID: 2100000, guid: ba2e2bbacb5f3594d89136c0161f4087, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floors_wind.007
+    second: {fileID: 2100000, guid: 57b8b9119abbb4749a1239d8b0720eac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 5c3583263d50f1a429ae903e2c81b4cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 8281fbe41c3be0f41b80b7fc330ba1aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: details_roof_wall.003
+    second: {fileID: 2100000, guid: cc17a3533c11b0544bb52c8bbb7b53a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floors_stones.003
+    second: {fileID: 2100000, guid: adb7d12ac00037d4194ab25911de2618, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floors_wall.006
+    second: {fileID: 2100000, guid: 9cbb8158ea270e64cba1c13432e5003b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floors_wall.007
+    second: {fileID: 2100000, guid: 21a0109e89b6f034a8fb09ff80fcda66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floors_windows_.006
+    second: {fileID: 2100000, guid: be5e9d69a569f0549988abb728998847, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floors_windows_.007
+    second: {fileID: 2100000, guid: 36fad777f45475c40b7a843f7c4600ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: proxy_mat_roof.003
+    second: {fileID: 2100000, guid: 5f3b28a9dbf4ddb41bf374c56fa8ed1b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses1_proxy_mat_grey_AlbedoTransparency
+    second: {fileID: 2800000, guid: ca3289201bd825c419f2f6efae67cf0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses1_proxy_mat_grey_MetallicSmoothness
+    second: {fileID: 2800000, guid: a4bdb716cd9cf604fbe7c96a6cdfec95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses1_proxy_mat_grey_Normal
+    second: {fileID: 2800000, guid: 666c9a0234bbf39478879eb7bc026ccf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_1floor_1floor_enter_AlbedoTransparency
+    second: {fileID: 2800000, guid: 773d9d15327f8a0428a61596ba26398f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_1floor_1floor_enter_MetallicSmoothness
+    second: {fileID: 2800000, guid: d06320533ae735647ba3d8678cd4a9a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_1floor_1floor_enter_Normal
+    second: {fileID: 2800000, guid: 975621602b3f836439fcf8fd54df6525, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_Floors_wind_AlbedoTransparency
+    second: {fileID: 2800000, guid: fc3ed04116ae964438942b79ba69af22, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_Floors_wind_MetallicSmoothness
+    second: {fileID: 2800000, guid: b939783a88c919d468f2cc22ec9bef6a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_Floors_wind_Normal
+    second: {fileID: 2800000, guid: f73634bc85c36e14694da6f5a54553d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_stones_AlbedoTransparency
+    second: {fileID: 2800000, guid: ee3015b10142ad2419f1cb1e37572898, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_stones_MetallicSmoothness
+    second: {fileID: 2800000, guid: 1ec3c18b5a3408b42a335bdd3c0334da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_stones_Normal
+    second: {fileID: 2800000, guid: fa342d38a0c835a45bc22304d34e52a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_wall_AlbedoTransparency
+    second: {fileID: 2800000, guid: 658eb7ffdb18034458184f93640d4dae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_wall_MetallicSmoothness
+    second: {fileID: 2800000, guid: 557849d0926d02845aa3554a0ff11a31, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_wall_Normal
+    second: {fileID: 2800000, guid: 35e891b7b12e3044089bbfaea6007ad3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_windows_AlbedoTransparency
+    second: {fileID: 2800000, guid: 7980ee9198193f7458c1e461ac0b4432, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_windows_MetallicSmoothness
+    second: {fileID: 2800000, guid: 333f34dfb4ed5a948aa2aa73d136e1c3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_floors_stones_floors_windows_Normal
+    second: {fileID: 2800000, guid: a54cd667edb205e4cb965093472bf17a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_roofsWallsDetail_details_roof_wall_AlbedoTransparency
+    second: {fileID: 2800000, guid: e9006859ae3d41c48a6a113cddbc0b69, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_roofsWallsDetail_details_roof_wall_MetallicSmoothness
+    second: {fileID: 2800000, guid: e4d540893a714aa48bf7d4416358ef04, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Houses_roofsWallsDetail_details_roof_wall_Normal
+    second: {fileID: 2800000, guid: 4b16b7e9449833744856224d555e6c96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leaf3_low_DefaultMaterial_AlbedoTransparency
+    second: {fileID: 2800000, guid: 4b184e45ef9027f4d83978d4d1244412, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leaf3_low_DefaultMaterial_Normal
+    second: {fileID: 2800000, guid: 4f52b01baa43ef0429077bca6a0f67cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: plane_divided_DefaultMaterial_AlbedoTransparency
+    second: {fileID: 2800000, guid: 6ba06b5cc25ba614e9d6513938e087d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: plane_divided_DefaultMaterial_MetallicSmoothness
+    second: {fileID: 2800000, guid: b8bef73074853d34da46056bd45f4df2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: plane_divided_DefaultMaterial_Normal
+    second: {fileID: 2800000, guid: 2ba6d81adaad6e247a7a895a334189a4, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

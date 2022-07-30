@@ -6,6 +6,18 @@ public class PathAgent : MonoBehaviour
 {
     //-------PROPERTY
     public Transform MyTransform => _transform = _transform ??= transform;
+    public float SpeedMult
+    {
+        get
+        {
+            return _speedMult;
+        }
+
+        set
+        {
+            _speedMult = value;
+        }
+    }
 
 
 
@@ -15,7 +27,7 @@ public class PathAgent : MonoBehaviour
     [SerializeField]
     private PathCreator _path;
     [SerializeField]
-    private float _speed = 1, _viewSpeed = 0.5f;
+    private float _speed = 1, _viewSpeed = 0.5f, _speedMult = 1;
     [SerializeField]
     private float _minPointDistance = 1;
     [SerializeField]
@@ -63,12 +75,12 @@ public class PathAgent : MonoBehaviour
 
         if (_isStrictlyGo)
         {
-            MyTransform.position += direction.normalized * _speed;
+            MyTransform.position += direction.normalized * _speed * _speedMult;
         }
         else
         {
             _isLockToPoint = true;
-            MyTransform.position += MyTransform.forward * _speed;
+            MyTransform.position += MyTransform.forward * _speed * _speedMult;
         }
 
         if (Vector3.Distance(MyTransform.position, nextPoint) <= _minPointDistance)
@@ -77,5 +89,10 @@ public class PathAgent : MonoBehaviour
             _nextPoint++;
             _currentPoint++;
         }
+    }
+
+    public void SetSpeed(float speed)
+    {
+        _speed = speed;
     }
 }

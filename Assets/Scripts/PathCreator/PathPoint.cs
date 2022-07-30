@@ -36,6 +36,9 @@ public class PathPoint : MonoBehaviour
     {
         AgentInfo FindInfo()
         {
+            if (_agentInfos == null)
+                return null;
+
             for (int i = 0; i < _agentInfos.Length; i++)
             {
                 if (_agentInfos[i].pathAgent == agent)

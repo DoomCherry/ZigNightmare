@@ -46,8 +46,6 @@ public class TargetSelector : MonoBehaviour
     private float _mouseRadiusSelect = 1;
     [SerializeField]
     private float _selectAngle = 25;
-    [SerializeField]
-    private float _ySelectLevel = 1;
 
     private Camera _main;
     private Transform _myTransform;
@@ -85,9 +83,9 @@ public class TargetSelector : MonoBehaviour
 
         LinearFunction3 mouseLine = new LinearFunction3(ray.origin * -1, ray.direction);
 
-        Vector3 _mousePointInWorld = mouseLine.GetCoordsFromProjectionY(_ySelectLevel);
+        Vector3 _mousePointInWorld = mouseLine.GetCoordsFromProjectionY(MyTransform.position.y);
         Vector3 seltPosition = MyTransform.position;
-        seltPosition.y = _ySelectLevel;
+        seltPosition.y = MyTransform.position.y;
 
         LinearFunction3 playerToMouse = new LinearFunction3(seltPosition, seltPosition - _mousePointInWorld);
 
@@ -119,7 +117,7 @@ public class TargetSelector : MonoBehaviour
             item.Diselect();
 
             Vector3 targetPosition = item.MyTransform.position;
-            targetPosition.y = _ySelectLevel;
+            targetPosition.y = MyTransform.position.y;
             float angle = Vector3.Angle(playerToMouse.direction.normalized, (seltPosition - targetPosition).normalized);
 
             if (angle > _selectAngle)

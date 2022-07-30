@@ -20,6 +20,12 @@ public class BossAnimationControiler : MonoBehaviour
     //-------FIELD
     [SerializeField]
     public string _rollingStageBoolName = "IsRolling";
+    [SerializeField]
+    public string _speedFloatName = "Speed";
+    [SerializeField]
+    public string _walkMultName = "RolingMult";
+    [SerializeField]
+    public string _rolingMultName = "WalkMult";
 
     [SerializeField]
     private Animator _customAnimator;
@@ -71,5 +77,20 @@ public class BossAnimationControiler : MonoBehaviour
             _onRolling?.Invoke();
         else
             _onWalking?.Invoke();
+    }
+
+    public void SetSpeed(float speed)
+    {
+        Animator.SetFloat(_speedFloatName, speed);
+    }
+
+    public void SetWalkMult(float speed)
+    {
+        Animator.SetFloat(_walkMultName, speed);
+    }
+
+    public void SetRollingMult(float speed)
+    {
+        Animator.SetFloat(_rolingMultName, speed);
     }
 }
