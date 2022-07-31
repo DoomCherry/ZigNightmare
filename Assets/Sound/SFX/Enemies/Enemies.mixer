@@ -291,7 +291,7 @@ AudioMixerController:
     - f23a027ac9e34cb42804728a5e422f06
     - d3c1f3c9bc442eb4fa125f9cc2ec79f5
     name: Scorpion
-  m_CurrentViewIndex: 1
+  m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
 AudioMixerGroupController:
@@ -342,8 +342,9 @@ AudioMixerSnapshotController:
     e0c0a1322f78b8944bd5ca018be4b3a7: -6.133707
     8bf4367b2cfbd3343bf1beec38189f1e: -2.8722944
     e60e148beb4b55548866dbf35cd68cbf: -0.10231405
-    37effa8b96f5b7e45819e4ec9566555f: 20
+    37effa8b96f5b7e45819e4ec9566555f: 4.047786
     e42f6c0d28fc8cc408fa30f81073d0e1: 0.44032478
+    585221febb3e627429e12ea5c9d153a9: 5.1526933
     8c5ac8df97499e24f823666fa1c1d883: -14.816608
   m_TransitionOverrides: {}
 --- !u!244 &772915093815552203
