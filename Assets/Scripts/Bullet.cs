@@ -4,10 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody), typeof(SimpleDamageDealer))]
 public class Bullet : MonoBehaviour
 {
     //-------PROPERTY
+    public SimpleDamageDealer MyDamagDealer
+    {
+        get
+        {
+            _damageDealer = _damageDealer == null ? GetComponent<SimpleDamageDealer>() : _damageDealer;
+            return _damageDealer;
+        }
+    }
+
     private Rigidbody MyRigidbody
     {
         get
@@ -55,11 +64,10 @@ public class Bullet : MonoBehaviour
 
     //-------FIELD
     [SerializeField]
-    private float _damage = 1;
-    [SerializeField]
     private float _bulletLive = 5;
     [SerializeField]
     private LayerMask _collideLayers;
+    private SimpleDamageDealer _damageDealer;
     private Rigidbody _rigidbody;
 
 
@@ -75,11 +83,6 @@ public class Bullet : MonoBehaviour
             {
                 Destroy(gameObject);
             });
-    }
-
-    public void SetDamage(float damage)
-    {
-        _damage = damage;
     }
 
     public void ShotDirection(Vector3 direction, float power)
@@ -98,27 +101,20 @@ public class Bullet : MonoBehaviour
         if (binary.Length <= currentLayer || binary[currentLayer] != '1')
             return;
 
-
-        Enemy e = collision.gameObject.GetComponent<Enemy>();
-        if (e == true)
-        {
-            e.TakeDamage(_damage);
-            _onHitEnemy?.Invoke();
-            Destroy(gameObject);
-            return;
-        }
-
-        PlayerContorller pp = collision.gameObject.GetComponent<PlayerContorller>();
-
-        if (pp == true)
-        {
-            pp.TakeDamage(_damage);
-            _onHitPlayer?.Invoke();
-            Destroy(gameObject);
-            return;
-        }
-
         Destroy(gameObject);
+
+        if(collision.gameObject.GetComponent<Enemy>() == true)
+        {
+            _onHitEnemy?.Invoke();
+            return;
+        }
+
+        if(collision.gameObject.GetComponent<PlayerContorller>() == true)
+        {
+            _onHitPlayer?.Invoke();
+            return;
+        }
+
         _onHitWall?.Invoke();
     }
 }

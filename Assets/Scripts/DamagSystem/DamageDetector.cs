@@ -50,7 +50,7 @@ public class DamageDetector : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-      IDamageDealer dealer = collision.gameObject.GetComponent<IDamageDealer>();
+        IDamageDealer dealer = collision.gameObject.GetComponent<IDamageDealer>();
         if (dealer != null && !dealer.IsSelfDetect)
         {
             int layerValue = dealer.DamagableTarget.value;
