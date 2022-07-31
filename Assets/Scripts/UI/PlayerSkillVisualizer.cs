@@ -53,7 +53,7 @@ public class PlayerSkillVisualizer : MonoBehaviour
         bool isHaveCd = _playerController.ColdownList.TryGetValue(_playerController.Skill.SkillContainer, out float lastTime);
         float currentCd = Time.time - lastTime;
 
-        if (currentCd <= 0 && _lastCd > 0)
+        if (currentCd > _playerController.Skill.SkillContainer.coldown && _lastCd <= _playerController.Skill.SkillContainer.coldown)
         {
             _onSkillCdEnd?.Invoke();
         }

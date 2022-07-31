@@ -50,6 +50,7 @@ public class CharacterHealthBar : MonoBehaviour
         _healthBar.value = _damageController.MaxHp;
 
         _damageController.OnTakeDamage += RefreshHelathBar;
+        _damageController.OnTakeHeal += RefreshHelathBar;
         _damageController.OnChangeMaxHp += SetNewMaxHp;
     }
 
@@ -74,6 +75,7 @@ public class CharacterHealthBar : MonoBehaviour
     private void OnDestroy()
     {
         _damageController.OnTakeDamage -= RefreshHelathBar;
+        _damageController.OnTakeHeal -= RefreshHelathBar;
         _damageController.OnChangeMaxHp -= SetNewMaxHp;
     }
 }

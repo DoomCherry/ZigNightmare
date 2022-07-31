@@ -376,9 +376,10 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 _currentStamina = _currentStamina >= _maxStamina ? _maxStamina : _currentStamina + (_staminaRecoverPerSecond * Time.deltaTime);
                 _onStaminaChange?.Invoke();
 
-                if (Input.GetKey(KeyCode.LeftShift) && _currentStamina <= _staminaPerOnceDash)
+                if (Input.GetKey(KeyCode.LeftShift) && _currentStamina <= _staminaPerOnceDash && !_dashButtomIsActive)
                 {
                     _onDashNotActive?.Invoke();
+                    _dashButtomIsActive = true;
                 }
 
                 if (Input.GetKey(KeyCode.LeftShift) && _currentStamina >= _staminaPerOnceDash && !_dashButtomIsActive)
@@ -507,9 +508,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
         void TryUseNormalSkill()
         {
-            if (Input.GetKey(KeyCode.Mouse0) && !SkillsIsFreeze)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && Skill != null && !Skill.IsCharging)
             {
-                if (CheckSkillToCooldown())
+                if (CheckSkillToCooldown() && !SkillsIsFreeze)
                 {
                     UseNormalSkill();
                 }
@@ -523,9 +524,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
         void TryUseChargingSkill()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0) && !SkillsIsFreeze)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && Skill != null && Skill.IsCharging)
             {
-                if (CheckSkillToCooldown())
+                if (CheckSkillToCooldown() && !SkillsIsFreeze)
                 {
                     _coldownList.Add(Skill.SkillContainer, Time.time);
                     UseChargingSkill();
