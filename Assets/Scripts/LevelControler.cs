@@ -74,4 +74,14 @@ public class LevelControler : SingleMonoBehaviour<LevelControler>
         Scene s = SceneManager.GetActiveScene();
         SceneManager.LoadScene(s.name);
     }
+
+    public void LoadLevel(int levelIndex)
+    {
+        SceneManager.LoadScene(levelIndex);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c1fb5144a4a3853419db6996b22f1ce9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Karlo Cham
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 017ef5980acc2654f9c58f9f765d9f51, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
