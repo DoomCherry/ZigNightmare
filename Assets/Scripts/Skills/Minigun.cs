@@ -203,7 +203,7 @@ public class Minigun : MonoBehaviour, ISkill
         {
             Bullet bullet = Instantiate(_bulletPrefab, bulletSpawnPosition, Quaternion.identity);
             bullet.gameObject.SetActive(true);
-            bullet.MyDamagDealer.SetDamage(_bulletDamage);
+            bullet.SetDamage(_bulletDamage);
             bullet.ShotDirection(_bulletLoker ? _bulletLoker.forward : MyTransform.forward, _bulletSpeed);
         }
     }

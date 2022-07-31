@@ -90,6 +90,7 @@ public class DamageController : MonoBehaviour
         for (int i = 0; i < AllDamageDetector.Count; i++)
         {
             AllDamageDetector[i].OnTakeDamage += TakeDamage;
+            AllDamageDetector[i].OnTakeHeal += TakeDamage;
         }
 
         _currentHp = _maxHp;
@@ -97,8 +98,6 @@ public class DamageController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        _currentHp -= damage;
-
         if (_currentHp <= 0)
         {
             this.WaitSecond(0.1f, Demolish);
@@ -106,10 +105,16 @@ public class DamageController : MonoBehaviour
         }
 
         if (damage > 0)
+        {
+            _currentHp = Mathf.Clamp(_currentHp - damage, -1 ,_maxHp);
             _onTakeDamage?.Invoke();
+        }
 
         if (damage < 0)
+        {
+            _currentHp = Mathf.Clamp(_currentHp - damage, -1, _maxHp);
             _onTakeHeal?.Invoke();
+        }
     }
 
     public void SetMaxHp(float hp, bool isFitCurrentHp = true)
