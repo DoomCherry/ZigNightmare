@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 1202984965197363600, guid: c80a9252c91abc847ac3be3a9342ee99, type: 3}
   _name: 4
-  coldown: 3
+  coldown: 2
   minigunInfo:
     bulletDamage: 0
     torsionSpeed: 0
@@ -39,12 +39,12 @@ MonoBehaviour:
     blastEnemyLimits: 0
     blastLimitTime: 0
   uppercutInfo:
-    uppercutDamage: 30
+    uppercutDamage: 50
     uppercutUpVelocity: 10
     uppercutPushingForce: 5
     uppercutEnemyLimits: 25
     uppercutLimitTime: 0.5
-    powerUppercutDamage: 150
+    powerUppercutDamage: 250
     powerUppercutUpVelocity: 30
     powerUppercutPushingForce: 12
     powerUppercutEnemyLimits: 25

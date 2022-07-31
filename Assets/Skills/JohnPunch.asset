@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 2130535880278150251, guid: c80a9252c91abc847ac3be3a9342ee99, type: 3}
   _name: 1
-  coldown: 4
+  coldown: 3
   minigunInfo:
     bulletDamage: 0
     torsionSpeed: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
     waitToShoting: 0
     shotSpeed: 0
   cenaPunchInfo:
-    punchDamage: 250
+    punchDamage: 500
     maxWaitingTime: 2
     punchSpeed: 2
   downScorpionInfo:
