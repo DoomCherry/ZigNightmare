@@ -5861,7 +5861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &511902387
 Transform:
   m_ObjectHideFlags: 0
@@ -10895,7 +10895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &668937691
 Transform:
   m_ObjectHideFlags: 0
@@ -60318,7 +60318,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 65856
   _customAnimator: {fileID: 6627592153890646560}
-  _skill: {fileID: 668937690}
+  _skill: {fileID: 511902386}
   _lookToY: 1
   _onDashNotActive:
     m_PersistentCalls:

@@ -11,7 +11,6 @@ public class LevelControler : SingleMonoBehaviour<LevelControler>
 
 
     //-------FIELD
-    private Spawner[] _spawnerList;
 
     private List<Enemy> _enemyList = new List<Enemy>();
 
@@ -27,7 +26,6 @@ public class LevelControler : SingleMonoBehaviour<LevelControler>
     protected override void Start()
     {
         base.Start();
-        _spawnerList = FindObjectsOfType<Spawner>();
     }
 
     public void RegistryEnemy(Enemy enemy)
@@ -37,18 +35,10 @@ public class LevelControler : SingleMonoBehaviour<LevelControler>
 
     public void EnableAllSpawners()
     {
-        for (int i = 0; i < _spawnerList.Length; i++)
-        {
-            _spawnerList[i].gameObject.SetActive(true);
-        }
     }
 
     public void DesableAllSpawners()
     {
-        for (int i = 0; i < _spawnerList.Length; i++)
-        {
-            _spawnerList[i].gameObject.SetActive(false);
-        }
     }
 
     public void DestroyAllEnemy()
