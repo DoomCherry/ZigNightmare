@@ -83,7 +83,7 @@ public class PlayerAnimationControiler : MonoBehaviour
         Animator.SetFloat(_yViewFloatName, lookTo.y);
     }
 
-    public void SetJump(Rigidbody rigidbody, bool isJump)
+    public void SetJump(Rigidbody rigidbody, bool isJump, bool isFalling)
     {
         if (System.Math.Round(rigidbody.velocity.y, 2) >= 0 && isJump == false)
         {
@@ -91,7 +91,7 @@ public class PlayerAnimationControiler : MonoBehaviour
             return;
         }
 
-        if (rigidbody.velocity.y < 0)
+        if (isFalling)
         {
             Animator.SetInteger(_jumpStageViewIntName, (int)JumpStage.Fall);
             return;
@@ -100,6 +100,15 @@ public class PlayerAnimationControiler : MonoBehaviour
         if (isJump)
         {
             Animator.SetInteger(_jumpStageViewIntName, (int)JumpStage.Start);
+        }
+    }
+
+    public void UseSlippin(bool isUse)
+    {
+        if (isUse)
+        {
+            Animator.SetInteger(_jumpStageViewIntName, (int)JumpStage.Fall);
+            return;
         }
     }
 

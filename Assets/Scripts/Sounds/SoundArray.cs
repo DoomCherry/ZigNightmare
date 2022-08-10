@@ -22,29 +22,28 @@ public class SoundArray : MonoBehaviour
     //-------METODS
     private void Awake()
     {
-        if (_variation == null || _variation.Count == 0)
-        {
-            Debug.LogError($"{name}: install at least one audio clip in {nameof(SoundArray)}");
-            return;
-        }
-
         Audio.clip = GetRandomVariation();
     }
 
     public AudioClip GetRandomVariation()
     {
-        return _variation[Random.Range(0, _variation.Count)]; ;
+        if (_variation == null || _variation.Count < 1)
+            return null;
+        return _variation[Random.Range(0, _variation.Count)];
     }
 
     public void PlayRandom()
     {
         Audio.clip = GetRandomVariation();
-        Audio.Play();
+
+        if (Audio.clip != null)
+            Audio.Play();
     }
 
     public void Pause()
     {
-        Audio.Pause();
+        if (Audio.clip != null)
+            Audio.Pause();
     }
 
     public void Stop()

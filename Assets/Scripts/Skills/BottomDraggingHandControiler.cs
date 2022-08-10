@@ -115,7 +115,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
             Vector3 selfPosition =  MyTransform.position;
 
             Vector3 lockTo = targetPosition - selfPosition;
-            lockTo.y = _bottomDragging.HandHeightStart;
 
             MyTransform.rotation = Quaternion.LookRotation(lockTo, Vector3.up);
 
@@ -125,11 +124,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
         }
         else
         {
-            Vector3 targetPosition = MyTransform.TransformDirection(MyTransform.forward) * float.MaxValue;
-            targetPosition.y = _bottomDragging.HandHeightStart;
-
-            Vector3 selfPosition = _bottomDragging.MyTransform.position;
-
             CurrentStage = BottomDraggingState.Grab;
             Animator.SetInteger(_bottomDragging.AnimationStateNameInteger, (int)CurrentStage);
             _releaseHand = StartCoroutine(Projectiling());
@@ -221,7 +215,7 @@ public class BottomDraggingHandControiler : MonoBehaviour
 
         Vector3 targetPosition = target.MyTransform.position;
         Vector3 position = MyTransform.position;
-        position.y = _bottomDragging.HandHeightStart;
+        position.y = MyTransform.position.y - _bottomDragging.HandHeightStart;
         MyTransform.position = position;
 
         //if (CheckDraggingIsDestroy() == false)
@@ -274,7 +268,7 @@ public class BottomDraggingHandControiler : MonoBehaviour
         Vector3 direction = (_bottomDragging.MyTransform.position - targetPosition).normalized * -1;
         direction.y = 0;
         Vector3 position = MyTransform.position;
-        position.y = _bottomDragging.HandHeightStart;
+        position.y = MyTransform.position.y - _bottomDragging.HandHeightStart;
         MyTransform.position = position;
         //if (CheckDraggingIsDestroy() == false)
         //{

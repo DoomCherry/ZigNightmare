@@ -76,9 +76,13 @@ public class Blast : MonoBehaviour, ISkill
 
     public void Stop()
     {
-        _skillIsActive = false;
-        _onBlastEnd.Invoke();
-        Destroy(gameObject);
+        if (_instance != null)
+        {
+            _skillIsActive = false;
+            _onBlastEnd.Invoke();
+
+            Destroy(_instance.gameObject);
+        }
     }
 
     public void Exploid(Transform target)

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.38944632, g: 0.18298215, b: 0.02978225, a: 1}
+  m_IndirectSpecularColor: {r: 0.38944623, g: 0.182982, b: 0.029782243, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1962,18 +1962,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 59315126}
 --- !u!4 &59315126
 Transform:
@@ -2088,18 +2076,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -3128,18 +3104,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 85347150}
 --- !u!4 &85347150
 Transform:
@@ -3213,18 +3177,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 88981779}
 --- !u!4 &88981779
 Transform:
@@ -3295,18 +3247,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -3787,7 +3727,7 @@ GameObject:
   - component: {fileID: 98989331}
   - component: {fileID: 98989330}
   m_Layer: 16
-  m_Name: Road_004 (17)
+  m_Name: SlippinFlore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3829,7 +3769,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98989328}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4250,18 +4190,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 102229390}
 --- !u!4 &102229390
 Transform:
@@ -4332,18 +4260,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -6007,18 +5923,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -12572,6 +12476,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210852333}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &212464759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1295085128}
+    m_Modifications:
+    - target: {fileID: 1388893186, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 5869136275565732268}
+    - target: {fileID: 6599447671042381497, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: _globalSource
+      value: 
+      objectReference: {fileID: 33044446}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_RootOrder
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -69.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -31.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -190
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.27839872
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.3281753
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.22697005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.8736588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -35.402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 33.261
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -155.542
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755033028616816561, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: _customTarget
+      value: 
+      objectReference: {fileID: 2082572781}
+    - target: {fileID: 7755033028616816572, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: m_Name
+      value: Crate (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707108318972425119, guid: 55d658d8598485149ab3323975075222, type: 3}
+      propertyPath: _skill
+      value: 
+      objectReference: {fileID: 516819422}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55d658d8598485149ab3323975075222, type: 3}
 --- !u!1 &212617841
 GameObject:
   m_ObjectHideFlags: 0
@@ -13072,18 +13049,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -14537,18 +14502,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 293305832}
 --- !u!1 &297665537
 GameObject:
@@ -14649,18 +14602,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -15779,18 +15720,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 335035022}
 --- !u!4 &335035022
 Transform:
@@ -16109,18 +16038,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -21599,18 +21516,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   _transform: {fileID: 512942111}
 --- !u!4 &512942111
 Transform:
@@ -21637,6 +21542,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d048f33c14c148643a65e061136e6123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &516819422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7448391529894489748, guid: 55d658d8598485149ab3323975075222, type: 3}
+  m_PrefabInstance: {fileID: 212464759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &518421334
 GameObject:
   m_ObjectHideFlags: 0
@@ -21692,18 +21602,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -22499,18 +22397,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 532965260}
 --- !u!4 &532965260
 Transform:
@@ -22811,7 +22697,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -22823,19 +22709,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 543939650}
 --- !u!4 &543939650
@@ -23471,18 +23345,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -24536,7 +24398,7 @@ GameObject:
   - component: {fileID: 585295456}
   - component: {fileID: 585295455}
   m_Layer: 16
-  m_Name: Road_004 (4)
+  m_Name: SlippinFlore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24563,7 +24425,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585295453}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -25556,18 +25418,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 620052338}
 --- !u!4 &620052338
 Transform:
@@ -25843,18 +25693,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 639276206}
 --- !u!4 &639276206
 Transform:
@@ -25969,18 +25807,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -27382,7 +27208,7 @@ PrefabInstance:
       objectReference: {fileID: 1938777355}
     - target: {fileID: 1962735243197957019, guid: 3656e50920e701e499e546f0c41ae7b0, type: 3}
       propertyPath: _speed
-      value: 0.075
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1962735243197957019, guid: 3656e50920e701e499e546f0c41ae7b0, type: 3}
       propertyPath: _viewSpeed
@@ -29381,18 +29207,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 713488857}
 --- !u!4 &713488857
 Transform:
@@ -29896,18 +29710,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -31237,18 +31039,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -37580,18 +37370,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 808394532}
 --- !u!4 &808394532
 Transform:
@@ -37728,7 +37506,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -37740,19 +37518,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 815450300}
 --- !u!4 &815450300
@@ -38042,7 +37808,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -38054,19 +37820,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 825832971}
 --- !u!137 &827708683 stripped
@@ -42419,7 +42173,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -42431,19 +42185,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 953210227}
 --- !u!4 &953210227
@@ -42518,18 +42260,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 954572805}
 --- !u!4 &954572805
 Transform:
@@ -42589,7 +42319,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -42601,19 +42331,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 956680279}
 --- !u!4 &956680279
@@ -42770,7 +42488,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -42782,19 +42500,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 957215724}
 --- !u!4 &957215724
@@ -43162,7 +42868,7 @@ GameObject:
   - component: {fileID: 970788667}
   - component: {fileID: 970788666}
   m_Layer: 16
-  m_Name: Road_004 (16)
+  m_Name: SlippinFlore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43204,7 +42910,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970788664}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -43347,7 +43053,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -43359,19 +43065,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 972820144}
 --- !u!4 &972820144
@@ -43615,6 +43309,10 @@ PrefabInstance:
       propertyPath: _path
       value: 
       objectReference: {fileID: 229213701}
+    - target: {fileID: 1962735243197957019, guid: 3656e50920e701e499e546f0c41ae7b0, type: 3}
+      propertyPath: _speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3656e50920e701e499e546f0c41ae7b0, type: 3}
 --- !u!1 &980999800 stripped
@@ -44260,7 +43958,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -44272,19 +43970,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1004514908}
 --- !u!1 &1008899664
@@ -44319,7 +44005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _path: {fileID: 979616292}
-  _speed: 0.1
+  _speed: 3
   _viewSpeed: 0.05
   _speedMult: 1
   _minPointDistance: 1.9
@@ -44642,7 +44328,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0.2
+            m_FloatArgument: 6
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -44727,18 +44413,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -44882,7 +44556,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -44894,19 +44568,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1023579942}
 --- !u!4 &1023579942
@@ -45256,9 +44918,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selectColor: {r: 0, g: 0, b: 0, a: 0}
   _customTarget: {fileID: 0}
+  _maxTargetDistance: 50
   _radialMult: 3
   _mouseRadiusSelect: 1
   _selectAngle: 25
+  _updateTime: 0.25
 --- !u!136 &1039522385
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -45800,18 +45464,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -46486,7 +46138,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -46498,19 +46150,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1062195724}
 --- !u!4 &1062195724
@@ -46666,7 +46306,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -46678,19 +46318,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1067487774}
 --- !u!4 &1067487774
@@ -46905,7 +46533,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -46917,19 +46545,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1070051376}
 --- !u!4 &1070051376
@@ -52477,7 +52093,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -52489,19 +52105,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1117767429}
 --- !u!1 &1124273462
@@ -53428,7 +53032,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -53440,19 +53044,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1142486716}
 --- !u!4 &1142486716
@@ -54216,7 +53808,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -54228,19 +53820,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1183766968}
 --- !u!4 &1183766968
@@ -54652,49 +54232,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187659359}
   m_Mesh: {fileID: 3860747177700847175, guid: e8b80a9ba785e2c4d8ac71a501be3290, type: 3}
---- !u!1 &1194947938
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1194947940}
-  - component: {fileID: 1194947939}
-  m_Layer: 0
-  m_Name: VSync
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1194947939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194947938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37bc82e83e518be4487e2d357155d321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1194947940
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194947938}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.798725, y: 54.146473, z: -60.071487}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197206422
 GameObject:
   m_ObjectHideFlags: 0
@@ -55229,18 +54766,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -56640,18 +56165,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1282062260}
 --- !u!1 &1282924918
 GameObject:
@@ -56741,7 +56254,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -56753,19 +56266,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1289437502}
 --- !u!4 &1289437502
@@ -56915,6 +56416,7 @@ Transform:
   - {fileID: 1720223488}
   - {fileID: 1487324574}
   - {fileID: 648998025}
+  - {fileID: 1378468811}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58232,7 +57734,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -58244,19 +57746,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1349459773}
 --- !u!4 &1349459773
@@ -58705,6 +58195,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5364306971926244304, guid: 57333080f3aa1a6419f890d1a4510189, type: 3}
   m_PrefabInstance: {fileID: 1378331265}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1378468811 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6977406090242743558, guid: 55d658d8598485149ab3323975075222, type: 3}
+  m_PrefabInstance: {fileID: 212464759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1378900617 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6668413245263995865, guid: cdc88f326d297e64a8eb6ac07a04ae68, type: 3}
@@ -58830,18 +58325,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -59275,7 +58758,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -59287,19 +58770,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1404465783}
 --- !u!4 &1404465783
@@ -64593,7 +64064,7 @@ GameObject:
   - component: {fileID: 1422016655}
   - component: {fileID: 1422016654}
   m_Layer: 16
-  m_Name: Road_004 (15)
+  m_Name: SlippinFlore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64635,7 +64106,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422016652}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -64748,7 +64219,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -64760,19 +64231,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1427370980}
 --- !u!1 &1428161325
@@ -65789,18 +65248,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1459939944}
 --- !u!4 &1459939944
 Transform:
@@ -65871,18 +65318,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -72983,7 +72418,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -72995,19 +72430,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1541863889}
 --- !u!4 &1541863889
@@ -74411,6 +73834,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1556712268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556712264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.391175, y: 16.767466, z: 12.168057}
+  m_Center: {x: -4.6955786, y: 7.883733, z: -0.9823639}
 --- !u!1 &1557677592
 GameObject:
   m_ObjectHideFlags: 0
@@ -74925,18 +74361,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1573684191}
 --- !u!1 &1576308037
 GameObject:
@@ -75171,18 +74595,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -76926,18 +76338,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1629247014}
 --- !u!4 &1629247014
 Transform:
@@ -77237,18 +76637,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1635947345}
 --- !u!4 &1635947345
 Transform:
@@ -77351,7 +76739,7 @@ GameObject:
   - component: {fileID: 1642761287}
   - component: {fileID: 1642761286}
   m_Layer: 16
-  m_Name: Road_004 (18)
+  m_Name: SlippinFlore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77393,7 +76781,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642761284}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -77503,18 +76891,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -79402,18 +78778,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1699504821}
 --- !u!4 &1699504821
 Transform:
@@ -79612,7 +78976,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -79624,19 +78988,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1706414077}
 --- !u!4 &1706414077
@@ -81185,7 +80537,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -81196,18 +80548,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -81270,7 +80610,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -81282,19 +80622,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1776484989}
 --- !u!4 &1776484989
@@ -81521,18 +80849,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -87671,18 +86987,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1820830312}
 --- !u!4 &1820830312
 Transform:
@@ -88750,7 +88054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _path: {fileID: 876186074}
-  _speed: 0.02
+  _speed: 0.5
   _viewSpeed: 0.05
   _speedMult: 1
   _minPointDistance: 1
@@ -89448,7 +88752,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -89460,19 +88764,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 1868658786}
 --- !u!4 &1868658786
@@ -90265,18 +89557,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -91169,18 +90449,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1926278624}
 --- !u!4 &1926278624
 Transform:
@@ -91417,18 +90685,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -92204,18 +91460,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 1950799924}
 --- !u!4 &1950799924
 Transform:
@@ -92556,7 +91800,7 @@ GameObject:
   - component: {fileID: 1957298530}
   - component: {fileID: 1957298529}
   m_Layer: 16
-  m_Name: Road_004 (14)
+  m_Name: SlippinFlore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92583,7 +91827,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957298527}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -93266,18 +92510,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -95988,18 +95220,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   _transform: {fileID: 2015380836}
 --- !u!4 &2015380836
 Transform:
@@ -96525,7 +95745,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -96537,19 +95757,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 2031252519}
 --- !u!4 &2031252519
@@ -96778,7 +95986,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1962735242524512616}
           m_TargetAssemblyTypeName: BossAnimationControiler, Assembly-CSharp
@@ -96790,19 +95998,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 1
             m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
-            m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   _transform: {fileID: 2038179048}
 --- !u!4 &2038179048
@@ -97394,18 +96590,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -102758,6 +101942,14 @@ PrefabInstance:
       propertyPath: _globalSource
       value: 
       objectReference: {fileID: 1898072094}
+    - target: {fileID: 2980003102396354595, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: _selfDetector
+      value: 
+      objectReference: {fileID: 2082572782}
+    - target: {fileID: 2980003102396354595, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: _damagableTarget.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 3664967787937544473, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: _globalSource
       value: 
@@ -102808,15 +102000,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8248337726205169324, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -141.281
+      value: -59.9
       objectReference: {fileID: 0}
     - target: {fileID: 8248337726205169324, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.41
+      value: -62.2
       objectReference: {fileID: 0}
     - target: {fileID: 8248337726205169324, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -196.115
+      value: 42.5
       objectReference: {fileID: 0}
     - target: {fileID: 8248337726205169324, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -102845,6 +102037,14 @@ PrefabInstance:
     - target: {fileID: 8248337726205169324, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248337726205169325, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: _groundTestColliderRadius
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248337726205169325, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+      propertyPath: _groundTestColliderOffset.y
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8248337726205169326, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
       propertyPath: _onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -102891,6 +102091,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8248337726205169322, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
   m_PrefabInstance: {fileID: 2082572778}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2082572782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8248337726205169332, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
+  m_PrefabInstance: {fileID: 2082572778}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082572781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9700226a592fb546a0221fe98e7a895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2082572783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8248337726205169324, guid: e7381f861e5c59844982c4011b45e6fb, type: 3}
@@ -102956,18 +102167,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -103531,18 +102730,6 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 1
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1962735242524512407}
-          m_TargetAssemblyTypeName: PathAgent, Assembly-CSharp
-          m_MethodName: SetSpeed
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0.075
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
@@ -105959,12 +105146,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 440661898118719671, guid: ae695c4b496c1434e96e1e0eb45a4092, type: 3}
       propertyPath: _variation.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 440661898118719671, guid: ae695c4b496c1434e96e1e0eb45a4092, type: 3}
       propertyPath: _variation.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 47f43191a228073438b6127356e1fa5c, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1190075939520149930, guid: ae695c4b496c1434e96e1e0eb45a4092, type: 3}
       propertyPath: _variation.Array.size
       value: 1
@@ -106362,9 +105549,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1436604360}
     - target: {fileID: 4599177886369962264, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Name
+      value: SlippinFlore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599177886369962264, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 4599177886369962265, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
     - target: {fileID: 4599177886369962276, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.52
@@ -106877,6 +106072,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4599177887343553713, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
+    - target: {fileID: 4599177887343553719, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Name
+      value: SlippinFlore
+      objectReference: {fileID: 0}
     - target: {fileID: 4599177887343553719, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_Layer
       value: 16
@@ -106966,9 +106169,17 @@ PrefabInstance:
       value: -10.868
       objectReference: {fileID: 0}
     - target: {fileID: 4599177887569176897, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Name
+      value: SlippinFlore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599177887569176897, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 4599177887569176898, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
     - target: {fileID: 4599177887569176909, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.14
@@ -107086,9 +106297,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1436604360}
     - target: {fileID: 4599177887673491899, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Name
+      value: SlippinFlore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599177887673491899, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 4599177887673491908, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
     - target: {fileID: 4599177887693532719, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.69
@@ -107490,9 +106709,17 @@ PrefabInstance:
       value: -35.2
       objectReference: {fileID: 0}
     - target: {fileID: 7971604107226642193, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Name
+      value: SlippinFlore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971604107226642193, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 7971604107226642199, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1de9610e977b4704d9ca26f99761a738, type: 2}
     - target: {fileID: 7971604107487553606, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
       propertyPath: _globalSource
       value: 
@@ -107521,7 +106748,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamNewMap
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4599177886359617611, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4c6cc61f97edef24dbdfcff111a48849, type: 3}
 --- !u!1001 &4843024130039472368
 PrefabInstance:
@@ -107738,7 +106966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5869136275565732270}
   m_LocalRotation: {x: 0.28386196, y: -0.019297225, z: 0.01406699, w: 0.9585678}
-  m_LocalPosition: {x: -141.281, y: 1.0187025, z: -202.90501}
+  m_LocalPosition: {x: -59.9, y: -53.771297, z: 35.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5869136276702391029}
@@ -107832,7 +107060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5869136275581560864}
   m_LocalRotation: {x: 0.28386194, y: -0.019297224, z: 0.0140669895, w: 0.95856774}
-  m_LocalPosition: {x: -141.281, y: 1.0187025, z: -202.90501}
+  m_LocalPosition: {x: -59.9, y: -53.771297, z: 35.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5869136276069884693}

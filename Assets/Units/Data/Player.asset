@@ -15,7 +15,7 @@ MonoBehaviour:
   _icon: {fileID: 0}
   _name: 0
   _movespeed: 6.5
-  _velocity: 2
+  _velocity: 5
   _maxHp: 1000
   playerInfo:
     jumpPower: 15

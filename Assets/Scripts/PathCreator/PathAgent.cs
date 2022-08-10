@@ -75,12 +75,12 @@ public class PathAgent : MonoBehaviour
 
         if (_isStrictlyGo)
         {
-            MyTransform.position += direction.normalized * _speed * _speedMult;
+            MyTransform.position += direction.normalized * _speed * _speedMult * Time.deltaTime;
         }
         else
         {
             _isLockToPoint = true;
-            MyTransform.position += MyTransform.forward * _speed * _speedMult;
+            MyTransform.position += MyTransform.forward * _speed * _speedMult * Time.deltaTime;
         }
 
         if (Vector3.Distance(MyTransform.position, nextPoint) <= _minPointDistance)

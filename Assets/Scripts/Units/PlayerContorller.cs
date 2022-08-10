@@ -58,42 +58,31 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     {
         get
         {
-            if (_groundTestCollider == null)
+            var direction = new Vector3 { [MyCollider.direction] = 1 };
+            float capsuleRadius = MyCollider.radius * _groundTestColliderRadius;
+
+            var offset = MyCollider.height / 2 - capsuleRadius;
+            var localPoint0 = (MyCollider.bounds.center - direction * offset) + _groundTestColliderOffset;
+            var localPoint1 = (MyCollider.bounds.center + direction * offset) + _groundTestColliderOffset;
+
+            Collider[] colliders = Physics.OverlapCapsule(localPoint0, localPoint1, capsuleRadius, _jumpColliderLayer, QueryTriggerInteraction.Ignore);
+            if (colliders.Length > 0)
             {
-                var direction = new Vector3 { [MyCollider.direction] = 1 };
-                var offset = MyCollider.height / 2 - MyCollider.radius;
-                var localPoint0 = MyCollider.bounds.center - direction * offset;
-                var localPoint1 = MyCollider.bounds.center + direction * offset;
-
-                Collider[] colliders = Physics.OverlapCapsule(localPoint0, localPoint1, MyCollider.radius, _jumpColliderLayer, QueryTriggerInteraction.Ignore);
-                if (colliders.Length > 0)
-                {
-                    _currentSloppingFlore = colliders.FirstOrDefault(n => n.gameObject.layer == _slopingFloreLayer);
-                    return true;
-                }
-
-                _currentSloppingFlore = null;
-                return false;
+                _currentSloppingFlore = colliders.FirstOrDefault(n => n.gameObject.layer == _slopingFloreLayer);
+                return true;
             }
-            else
-            {
-                Collider[] colliders = Physics.OverlapSphere(_groundTestCollider.bounds.center, _groundTestCollider.radius, _jumpColliderLayer, QueryTriggerInteraction.Ignore);
-                if (colliders.Length > 0)
-                {
-                    _currentSloppingFlore = colliders.FirstOrDefault(n => n.gameObject.layer == _slopingFloreLayer);
-                    return true;
-                }
 
-                _currentSloppingFlore = null;
-                return false;
-            }
+            _currentSloppingFlore = null;
+            return false;
         }
     }
 
     public float CurrentStamina => _currentStamina;
     public float MaxStamina => _maxStamina;
     public Vector3 WalkDirection => MyTransform.position - _lastPosition;
-    public bool IsSlipping => _currentSloppingFlore != null && MyRigidbody.velocity.y < 0.1f && Math.Round(WalkDirection.magnitude, 1) != 0;
+    public bool IsSlipping => _currentSloppingFlore != null &&
+                               MyRigidbody.velocity.y < 0.1f &&
+                               Math.Round(WalkDirection.magnitude, 1) != 0;
 
 
 
@@ -105,7 +94,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     [SerializeField]
     private int _slopingFloreLayer;
     [SerializeField]
-    private SphereCollider _groundTestCollider;
+    private Vector3 _groundTestColliderOffset;
+    [SerializeField]
+    private float _groundTestColliderRadius = 1;
 
     [SerializeField]
     private UnitContainer _unitContainer;
@@ -358,7 +349,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
             if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A))
             {
-                if (_walkDirection.x == 0 && _walkDirection.y == 0 && _isDashing == false && !IsSlipping)
+                if (_walkDirection.x == 0 && _walkDirection.y == 0 && _isDashing == false)
                 {
                     StopMove();
                 }
@@ -468,8 +459,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
             {
                 Vector3 loockDirection = MyTransform.forward;
                 AnimationControiler.SetMovement(new Vector2(_walkDirection.x, _walkDirection.z), new Vector2(loockDirection.x, loockDirection.z));
-                AnimationControiler.SetJump(MyRigidbody, _walkDirection.y > 0);
+                AnimationControiler.SetJump(MyRigidbody, _walkDirection.y > 0, MyRigidbody.velocity.y < 0 && !OnFlore);
                 AnimationControiler.SetDash(_isDashing);
+                AnimationControiler.UseSlippin(IsSlipping);
             }
             SetAnimation();
         }
@@ -482,13 +474,13 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
         void Slipping()
         {
-            Vector3 dir = WalkDirection;
-            dir.y = 0;
+            //Vector3 dir = WalkDirection;
+            //dir.y = 0;
 
-            if (IsSlipping)
-            {
-                MyRigidbody.rotation = Quaternion.LookRotation(dir.normalized);
-            }
+            //if (IsSlipping)
+            //{
+            //    MyRigidbody.rotation = Quaternion.LookRotation(dir.normalized);
+            //}
 
             if (IsSlipping != _lastIsSlipping)
             {

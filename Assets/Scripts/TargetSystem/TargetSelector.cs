@@ -1,6 +1,5 @@
 using Doomchery;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public struct TargetInfo
@@ -39,13 +38,17 @@ public class TargetSelector : MonoBehaviour
     private GameObject _customTarget;
     private ITarget _customITarget;
 
-
+    [SerializeField]
+    private float _maxTargetDistance = 50;
     [SerializeField]
     private float _radialMult = 3;
     [SerializeField]
     private float _mouseRadiusSelect = 1;
     [SerializeField]
     private float _selectAngle = 25;
+
+    [SerializeField]
+    private float _updateTime = 0.25f;
 
     private Camera _main;
     private Transform _myTransform;
@@ -72,13 +75,11 @@ public class TargetSelector : MonoBehaviour
             throw new System.NullReferenceException($"{name}: {SelectorHandler.Instance} is missing.");
 
         _main = Camera.main;
+        StartCoroutine(StartUpdate());
     }
 
-    private void FixedUpdate()
+    private void TargetSelectorUpdate()
     {
-        if (_customTarget != null)
-            return;
-
         Ray ray = _main.ScreenPointToRay(Input.mousePosition);
 
         LinearFunction3 mouseLine = new LinearFunction3(ray.origin * -1, ray.direction);
@@ -118,6 +119,10 @@ public class TargetSelector : MonoBehaviour
 
             Vector3 targetPosition = item.MyTransform.position;
             targetPosition.y = MyTransform.position.y;
+
+            if (Vector3.Distance(MyTransform.position, targetPosition) > _maxTargetDistance)
+                continue;
+
             float angle = Vector3.Angle(playerToMouse.direction.normalized, (seltPosition - targetPosition).normalized);
 
             if (angle > _selectAngle)
@@ -139,6 +144,15 @@ public class TargetSelector : MonoBehaviour
             {
                 SelectNewTarget(item, totalDistance);
             }
+        }
+    }
+
+    private IEnumerator StartUpdate()
+    {
+        while (_customTarget == null)
+        {
+            TargetSelectorUpdate();
+            yield return new WaitForSeconds(_updateTime);
         }
     }
 }
