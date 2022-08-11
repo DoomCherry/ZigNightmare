@@ -188,7 +188,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.335
+    m_Value: 0.849
     min: 0
     max: 1
   response:
@@ -218,22 +218,22 @@ MonoBehaviour:
     m_Value: 0.2
   contrast:
     m_OverrideState: 1
-    m_Value: 14.3
+    m_Value: 9
     min: -100
     max: 100
   colorFilter:
     m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.74272823, g: 1, b: 0, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
   hueShift:
     m_OverrideState: 1
-    m_Value: -10
+    m_Value: -4
     min: -180
     max: 180
   saturation:
     m_OverrideState: 1
-    m_Value: 10.8
+    m_Value: 12
     min: -100
     max: 100

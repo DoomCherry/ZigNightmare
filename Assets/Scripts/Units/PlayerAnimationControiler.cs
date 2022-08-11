@@ -106,6 +106,27 @@ public class PlayerAnimationControiler : MonoBehaviour
         }
     }
 
+    public void SetMovement(int power)
+    {
+        Animator.SetFloat(_xViewFloatName, 0);
+        Animator.SetFloat(_yViewFloatName, power);
+    }
+
+    public void SetJump()
+    {
+        Animator.SetInteger(_jumpStageViewIntName, (int)JumpStage.Start);
+    }
+
+    public void SetFall()
+    {
+        Animator.SetInteger(_jumpStageViewIntName, (int)JumpStage.Fall);
+    }
+
+    public void FallOnFlore()
+    {
+        Animator.SetInteger(_jumpStageViewIntName, (int)JumpStage.OnFlore);
+    }
+
     public void UseSlippin(bool isUse)
     {
         if (isUse)

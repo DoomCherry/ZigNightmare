@@ -26,6 +26,8 @@ public class BossAnimationControiler : MonoBehaviour
     public string _walkMultName = "RolingMult";
     [SerializeField]
     public string _rolingMultName = "WalkMult";
+    [SerializeField]
+    public string _flyAttackStateIntName = "FlyAtackState";
 
     [SerializeField]
     private Animator _customAnimator;
@@ -92,5 +94,10 @@ public class BossAnimationControiler : MonoBehaviour
     public void SetRollingMult(float speed)
     {
         Animator.SetFloat(_rolingMultName, speed);
+    }
+
+    public void SetFlyState(int state)
+    {
+        Animator.SetInteger(_flyAttackStateIntName, state);
     }
 }

@@ -18,6 +18,18 @@ public class PathAgent : MonoBehaviour
             _speedMult = value;
         }
     }
+    public bool IsLoockToPoint
+    {
+        get
+        {
+            return _isLockToPoint;
+        }
+
+        set
+        {
+            _isLockToPoint = value;
+        }
+    }
 
 
 
@@ -31,7 +43,9 @@ public class PathAgent : MonoBehaviour
     [SerializeField]
     private float _minPointDistance = 1;
     [SerializeField]
-    private bool _isLockToPoint = true, _isStrictlyGo = true, _isLooping = true;
+    public bool _isLockToPoint = true;
+    [SerializeField]
+    private bool _isStrictlyGo = true, _isLooping = true;
     private int _currentPoint = 0, _nextPoint = 1;
 
 
