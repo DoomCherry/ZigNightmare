@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 45088447}
   - component: {fileID: 45088446}
   - component: {fileID: 45088445}
+  - component: {fileID: 4818798507645513547}
   m_Layer: 0
   m_Name: Doll
   m_TagString: Untagged
@@ -82,6 +83,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4818798507645513547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45088443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1943c62cd6c8ba6418a4ebeefba99b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _liveTime: 5
 --- !u!1 &72502269
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +154,7 @@ GameObject:
   - component: {fileID: 688091056}
   - component: {fileID: 688091058}
   - component: {fileID: 688091057}
+  - component: {fileID: 6804659351239049190}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -210,6 +225,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688091055}
   m_Mesh: {fileID: 1973893103929547111, guid: 1cc85f3802d1e804fae11aa6f46447e9, type: 3}
+--- !u!114 &6804659351239049190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688091055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1943c62cd6c8ba6418a4ebeefba99b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _liveTime: 5
 --- !u!1 &1173705927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,7 +1121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873511165781755542}
   - component: {fileID: 7887036018252297039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1660,10 +1688,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selectColor: {r: 0, g: 0, b: 0, a: 0}
   _customTarget: {fileID: 0}
+  _maxTargetDistance: 50
   _radialMult: 3
   _mouseRadiusSelect: 1
   _selectAngle: 25
-  _ySelectLevel: 1
+  _updateTime: 0.25
 --- !u!114 &1322423257469695321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,6 +1965,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damageController: {fileID: 1322423257469695321}
   _healthBar: {fileID: 1322423257798209662}
+  _hpBoard: 30
+  _onLowHp:
+    m_PersistentCalls:
+      m_Calls: []
+  _onNormalHp:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1322423257996837790
 GameObject:
   m_ObjectHideFlags: 0

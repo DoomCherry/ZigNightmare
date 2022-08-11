@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 456633093}
   - component: {fileID: 456633091}
   - component: {fileID: 456633092}
+  - component: {fileID: 6866397878024152597}
   m_Layer: 0
   m_Name: Doll
   m_TagString: Untagged
@@ -228,6 +229,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6866397878024152597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456633090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1943c62cd6c8ba6418a4ebeefba99b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _liveTime: 5
 --- !u!1 &1129331024
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +253,7 @@ GameObject:
   - component: {fileID: 1129331025}
   - component: {fileID: 1129331027}
   - component: {fileID: 1129331026}
+  - component: {fileID: 867044340728023711}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -309,6 +324,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129331024}
   m_Mesh: {fileID: 1973893103929547111, guid: 1cc85f3802d1e804fae11aa6f46447e9, type: 3}
+--- !u!114 &867044340728023711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129331024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1943c62cd6c8ba6418a4ebeefba99b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _liveTime: 5
 --- !u!1 &2247961984774199840
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,8 +524,8 @@ MonoBehaviour:
   _sceneObjects:
   - {fileID: 0}
   _timeDelay: 0
-  _countMin: 1
-  _countMax: 6
+  _countMin: 2
+  _countMax: 9
   _spawnLimit: 10
   _spawnInUpdate: 0
   _onSpawn:
@@ -1113,7 +1141,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8497996951819241926}
-  m_LocalRotation: {x: 0.000000089301004, y: 0.000000061467304, z: -0.00000005016103, w: 1}
+  m_LocalRotation: {x: 0.00000005960465, y: 0.00000005960465, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1512,7 +1540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8497996951961631074}
   - component: {fileID: 8497996951961631073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3322,7 +3350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8497996952888043474
 Transform:
   m_ObjectHideFlags: 0
@@ -3389,10 +3417,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selectColor: {r: 0, g: 0, b: 0, a: 0}
   _customTarget: {fileID: 0}
+  _maxTargetDistance: 50
   _radialMult: 3
   _mouseRadiusSelect: 1
   _selectAngle: 25
-  _ySelectLevel: 1
+  _updateTime: 0.25
 --- !u!114 &8497996952888043478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,7 +3435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isDestroyAfterDeath: 1
-  _maxHp: 200
+  _maxHp: 250
   _additionalDamageDetectors: []
   _onChangeMaxHp:
     m_PersistentCalls:
@@ -3665,6 +3694,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damageController: {fileID: 8497996952888043478}
   _healthBar: {fileID: 8497996952896892187}
+  _hpBoard: 30
+  _onLowHp:
+    m_PersistentCalls:
+      m_Calls: []
+  _onNormalHp:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8497996952907420189
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,7 +3943,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8497996952996173061}
-  m_LocalRotation: {x: 0.0015189892, y: -0.18329068, z: 0.008146098, w: 0.9830238}
+  m_LocalRotation: {x: 0.0015189893, y: -0.18329068, z: 0.008146099, w: 0.9830238}
   m_LocalPosition: {x: -0.008799899, y: -0.00013659209, z: 0.005153777}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_Children:

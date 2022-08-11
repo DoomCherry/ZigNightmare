@@ -21,6 +21,7 @@ public interface ICharacterLimiter
     bool RotationIsFreeze { get; set; }
     bool SkillsIsFreeze { get; set; }
     bool IsPhysicTargetsDesable { get; set; }
+    bool IsFullSystemFreeze { get; set; }
 
 
 
@@ -38,6 +39,9 @@ public interface ICharacterLimiter
     void UnfreezeSkill();
     void JumpFreeze();
     void JumpUnfreeze();
+
+    void FullSystemFreeze();
+    void FullSystemUnfreeze();
 
     void DisablePhysicsTarget();
     void EnablePhysicsTarget();

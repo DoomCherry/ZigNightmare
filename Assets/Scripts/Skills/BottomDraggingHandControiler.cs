@@ -104,9 +104,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
 
     private void ReleaseHand()
     {
-        //if (CheckDraggingIsDestroy())
-        //    return;
-
         if (_bottomDragging.Selector.CurrentTarget != null)
         {
             _target = _bottomDragging.Selector.CurrentTarget;
@@ -134,9 +131,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
 
     private void BackHand()
     {
-        //if (CheckDraggingIsDestroy())
-        //    return;
-
         CurrentStage = BottomDraggingState.Pull;
         Animator.SetInteger(_bottomDragging.AnimationStateNameInteger, (int)CurrentStage);
         _pullHand = StartCoroutine(Grab(null, null, false));
@@ -144,9 +138,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
 
     private void BackWithTarget()
     {
-        //if (CheckDraggingIsDestroy())
-        //    return;
-
         if (CheckTargetIsDestroy())
             return;
 
@@ -174,16 +165,12 @@ public class BottomDraggingHandControiler : MonoBehaviour
 
     private IEnumerator Grab(Action onPull, Action onPullEnd, bool withTarget)
     {
-        //if (CheckDraggingIsDestroy() == false)
-        //{
 
         _lastGrabPosition = MyTransform.position;
         while (Vector3.Distance(MyTransform.position, _bottomDragging.transform.position) > _bottomDragging.StopDistance)
         {
             yield return new WaitForSeconds(Time.fixedDeltaTime);
 
-            //if (CheckDraggingIsDestroy())
-            //    break;
 
             if (withTarget)
             {
@@ -205,7 +192,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
         onPullEnd?.Invoke();
         _onPullingEnd?.Invoke();
         Destroy(gameObject);
-        //}
     }
 
     private IEnumerator Projectiling(ITarget target)
@@ -218,14 +204,9 @@ public class BottomDraggingHandControiler : MonoBehaviour
         position.y = MyTransform.position.y - _bottomDragging.HandHeightStart;
         MyTransform.position = position;
 
-        //if (CheckDraggingIsDestroy() == false)
-        //{
         while (isCollide == false && Vector3.Distance(MyTransform.position, _bottomDragging.MyTransform.position) < _bottomDragging.MaxDistance)
         {
             yield return new WaitForSeconds(Time.fixedDeltaTime);
-
-            //if (CheckDraggingIsDestroy())
-            //    break;
 
             targets = Physics.OverlapBox(MyCollider.bounds.center, MyCollider.bounds.extents / 2, Quaternion.identity, _bottomDragging.TargetLayer, QueryTriggerInteraction.Ignore)
                              .Select(n => n.GetComponent<ICharacterLimiter>()).ToArray();
@@ -242,7 +223,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
             MyTransform.position += MyTransform.forward * _bottomDragging.ProjectileSpeed;
 
         }
-        //}
 
         if (isCollide)
         {
@@ -270,12 +250,8 @@ public class BottomDraggingHandControiler : MonoBehaviour
         Vector3 position = MyTransform.position;
         position.y = MyTransform.position.y - _bottomDragging.HandHeightStart;
         MyTransform.position = position;
-        //if (CheckDraggingIsDestroy() == false)
-        //{
         while (isCollide == false && Vector3.Distance(MyTransform.position, _bottomDragging.MyTransform.position) < _bottomDragging.MaxDistance)
         {
-            //if (CheckDraggingIsDestroy())
-            //    break;
 
             targets = Physics.OverlapBox(MyCollider.bounds.center, MyCollider.bounds.extents / 2, Quaternion.identity, _bottomDragging.TargetLayer)
                              .Select(n => n.GetComponent<ICharacterLimiter>()).ToArray();
@@ -284,7 +260,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
             MyTransform.position += direction * _bottomDragging.ProjectileSpeed;
             yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
-        //}
 
         if (isCollide)
         {
@@ -298,26 +273,6 @@ public class BottomDraggingHandControiler : MonoBehaviour
             _onGrabEmpty?.Invoke();
         }
     }
-
-    //private bool CheckDraggingIsDestroy()
-    //{
-    //    return false;
-
-    //    if (_bottomDragging == null)
-    //    {
-    //        Destroy(gameObject);
-    //        return true;
-    //    }
-
-    //    // это тут нахер не нужно, но без него верхний if иногда не работает
-    //    if (_bottomDragging.Equals(null))
-    //    {
-    //        Destroy(gameObject);
-    //        return true;
-    //    }
-
-    //    return false;
-    //}
 
     private bool CheckTargetIsDestroy()
     {

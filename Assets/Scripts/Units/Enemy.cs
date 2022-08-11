@@ -51,6 +51,8 @@ public class Enemy : MonoBehaviour, ITarget, ICharacterLimiter
     public float Walkspeed => Skill != null && Skill.IsSkillActive ? _movespeedOnSkill : _movespeed;
     public float Viewspeed => Skill != null && Skill.IsSkillActive ? _viewSpeedOnSkill : _viewSpeed;
 
+    public bool IsFullSystemFreeze { get; set; }
+
 
 
 
@@ -322,5 +324,25 @@ public class Enemy : MonoBehaviour, ITarget, ICharacterLimiter
     {
         if (DamageController != null)
             DamageController.TakeDamage(damage);
+    }
+
+    public void FullSystemFreeze()
+    {
+        IsFullSystemFreeze = true;
+        FreezeFalling();
+        FreezeRotation();
+        FreezeWalking();
+        FreezeSkill();
+        JumpFreeze();
+    }
+
+    public void FullSystemUnfreeze()
+    {
+        IsFullSystemFreeze = false;
+        UnfreezeFalling();
+        UnfreezeRotation();
+        UnfreezeSkill();
+        UnfreezeWalking();
+        JumpUnfreeze();
     }
 }

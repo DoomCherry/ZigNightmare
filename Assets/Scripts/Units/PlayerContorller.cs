@@ -30,29 +30,6 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     public bool JumpIsFreeze { get; set; } = false;
     public bool IsPhysicTargetsDesable { get; set; } = false;
     public IReadOnlyDictionary<SkillContainer, float> ColdownList => _coldownList;
-    //public bool OnFlore
-    //{
-    //    get
-    //    {
-    //        Vector3 postion = MyTransform.position;
-    //        postion.y = 100;
-
-    //        Ray ray = new Ray(postion, Vector3.down);
-
-    //        Vector3 colliderCenter = MyCollider.center + MyTransform.position;
-    //        float pointHeight = colliderCenter.y - (MyCollider.height * MyTransform.lossyScale.y / 2);
-
-    //        if (Physics.Raycast(ray, out RaycastHit info, 200, _jumpColliderLayer, QueryTriggerInteraction.Ignore))
-    //        {
-    //            if (Math.Round(Mathf.Abs(info.point.y - pointHeight), 2) <= 0)
-    //            {
-    //                return true;
-    //            }
-    //        }
-
-    //        return false;
-    //    }
-    //}
 
     public bool OnFlore
     {
@@ -84,10 +61,15 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                                MyRigidbody.velocity.y < 0.1f &&
                                Math.Round(WalkDirection.magnitude, 1) != 0;
 
+    public bool IsFullSystemFreeze { get; set; }
+
 
 
 
     //-------FIELD
+    [SerializeField]
+    private string _horizontalAxisName = "Horizontal", _verticalAxisName = "Vertical";
+
     [SerializeField]
     private float _maxSkillStealDistance = 10;
 
@@ -264,6 +246,14 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseManager.Instance.SetPause(!PauseManager.Instance.IsInPause);
+        }
+    }
+
+    private void FixedUpdate()
+    {
         if (OnFlore)
         {
             if (_lastOnFlorePoints.Count > _maxOnFlorePoint)
@@ -287,55 +277,26 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
             MyRigidbody.useGravity = !FallingIsFreeze;
 
-            _walkDirection = Vector3.zero;
+            _walkDirection = new Vector3(Input.GetAxisRaw(_horizontalAxisName),0, Input.GetAxisRaw(_verticalAxisName));
+
             Vector3 walkSpeed = Vector3.zero;
 
-            if (Input.GetKey(KeyCode.W) && !WalkingIsFreeze)
+            if (Input.GetAxisRaw(_verticalAxisName) != 0 && !WalkingIsFreeze)
             {
-                _walkDirection += Vector3.forward;
-                float newSpeed = MyRigidbody.velocity.z + _velocitySpeed;
+                int axisSign = (int)Mathf.Sign(Input.GetAxisRaw(_verticalAxisName));
+                float newSpeed = MyRigidbody.velocity.z + (_velocitySpeed * axisSign);
                 float fixSpeed = Mathf.Clamp(newSpeed, -_speed, _speed);
 
-                if (Mathf.Abs(newSpeed) >= _speed)
-                    walkSpeed.z = 0;
-                else
-                    walkSpeed.z = _velocitySpeed - Mathf.Abs(newSpeed - fixSpeed);
+                walkSpeed.z = _velocitySpeed - Mathf.Abs(newSpeed - fixSpeed);
             }
 
-            if (Input.GetKey(KeyCode.A) && !WalkingIsFreeze)
+            if (Input.GetAxisRaw(_horizontalAxisName) != 0 && !WalkingIsFreeze)
             {
-                _walkDirection += -1 * Vector3.right;
-                float newSpeed = MyRigidbody.velocity.x - _velocitySpeed;
+                int axisSign = (int)Mathf.Sign(Input.GetAxisRaw(_horizontalAxisName));
+                float newSpeed = MyRigidbody.velocity.x + (_velocitySpeed * axisSign);
                 float fixSpeed = Mathf.Clamp(newSpeed, -_speed, _speed);
 
-                if (Mathf.Abs(newSpeed) >= _speed)
-                    walkSpeed.z = 0;
-                else
-                    walkSpeed.x = _velocitySpeed - Mathf.Abs(newSpeed - fixSpeed);
-            }
-
-            if (Input.GetKey(KeyCode.S) && !WalkingIsFreeze)
-            {
-                _walkDirection += -1 * Vector3.forward;
-                float newSpeed = MyRigidbody.velocity.z - _velocitySpeed;
-                float fixSpeed = Mathf.Clamp(newSpeed, -_speed, _speed);
-
-                if (Mathf.Abs(newSpeed) >= _speed)
-                    walkSpeed.z = 0;
-                else
-                    walkSpeed.z = _velocitySpeed - Mathf.Abs(newSpeed - fixSpeed);
-            }
-
-            if (Input.GetKey(KeyCode.D) && !WalkingIsFreeze)
-            {
-                _walkDirection += Vector3.right;
-                float newSpeed = MyRigidbody.velocity.x + _velocitySpeed;
-                float fixSpeed = Mathf.Clamp(newSpeed, -_speed, _speed);
-
-                if (Mathf.Abs(newSpeed) >= _speed)
-                    walkSpeed.z = 0;
-                else
-                    walkSpeed.x = _velocitySpeed - Mathf.Abs(newSpeed - fixSpeed);
+                walkSpeed.x = _velocitySpeed - Mathf.Abs(newSpeed - fixSpeed);
             }
 
             if (Input.GetKey(KeyCode.Space) && !JumpIsFreeze && OnFlore)
@@ -347,7 +308,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 _onJump?.Invoke();
             }
 
-            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A))
+            if (Input.GetAxisRaw(_horizontalAxisName) == 0 && Input.GetAxisRaw(_verticalAxisName) == 0)
             {
                 if (_walkDirection.x == 0 && _walkDirection.y == 0 && _isDashing == false)
                 {
@@ -357,8 +318,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
             void StopMove()
             {
-                Vector3 oldVelocity = MyRigidbody.velocity;
-                MyRigidbody.velocity = new Vector3(0, oldVelocity.y, 0);
+                MyRigidbody.velocity = new Vector3(0, MyRigidbody.velocity.y, 0);
             }
 
             float dashSpeed = 0;
@@ -429,6 +389,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                                     FallingIsFreeze ? 0.2f : Mathf.Clamp(MyRigidbody.velocity.y + _walkDirection.y * _jumpPower, -_jumpPower, _jumpPower),
                                     MyRigidbody.velocity.z + (_walkDirection.z * dashSpeed) + (_walkDirection.z * Mathf.Abs(walkSpeed.z)));
 
+
             if (!RotationIsFreeze && (Mathf.Abs(_walkDirection.x) > 0 || Mathf.Abs(_walkDirection.z) > 0))
             {
                 Vector3 myPositionDir = MyTransform.position;
@@ -474,14 +435,6 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
         void Slipping()
         {
-            //Vector3 dir = WalkDirection;
-            //dir.y = 0;
-
-            //if (IsSlipping)
-            //{
-            //    MyRigidbody.rotation = Quaternion.LookRotation(dir.normalized);
-            //}
-
             if (IsSlipping != _lastIsSlipping)
             {
                 if (IsSlipping)
@@ -677,5 +630,27 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     public void TakeDamage(float damage)
     {
         DamageController.TakeDamage(damage);
+    }
+
+    public void FullSystemFreeze()
+    {
+        IsFullSystemFreeze = true;
+        FreezeFalling();
+        FreezeRotation();
+        FreezeWalking();
+        FreezeSkill();
+        JumpFreeze();
+        AnimationControiler.SetAnimationSpeed(0);
+    }
+
+    public void FullSystemUnfreeze()
+    {
+        IsFullSystemFreeze = false;
+        UnfreezeFalling();
+        UnfreezeRotation();
+        UnfreezeSkill();
+        UnfreezeWalking();
+        JumpUnfreeze();
+        AnimationControiler.SetAnimationSpeed(1);
     }
 }

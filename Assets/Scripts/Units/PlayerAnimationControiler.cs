@@ -22,6 +22,8 @@ public class PlayerAnimationControiler : MonoBehaviour
 
     //-------FIELD
     [SerializeField]
+    private string _totalAnimationSpeedFloatName = "TotalAnimationSpeed";
+    [SerializeField]
     private string _xViewFloatName = "X", _yViewFloatName = "Y";
     [SerializeField]
     private string _jumpStageViewIntName = "JumpStage";
@@ -50,6 +52,7 @@ public class PlayerAnimationControiler : MonoBehaviour
 
     private Coroutine _prepareToSkill;
     private Coroutine _uppercutWaitEnd;
+    private float _lastCenaPunchSpeed = 1;
 
 
 
@@ -193,7 +196,8 @@ public class PlayerAnimationControiler : MonoBehaviour
             _waitSkill = null;
         }
 
-        Animator.SetFloat(_cenaPunchSpeedFloatName, skill.SkillContainer.cenaPunchInfo.punchSpeed);
+        _lastCenaPunchSpeed = skill.SkillContainer.cenaPunchInfo.punchSpeed;
+        Animator.SetFloat(_cenaPunchSpeedFloatName, _lastCenaPunchSpeed);
         _waitSkill = StartCoroutine(WaitSkill());
     }
 
@@ -280,7 +284,7 @@ public class PlayerAnimationControiler : MonoBehaviour
 
             if (uppercut.UppercutState == UppercutState.Punching)
             {
-                limiter.MyRigidbody.velocity = new Vector3(oldVelocity.x, uppercut.SkillContainer.uppercutInfo.uppercutUpVelocity,oldVelocity.z);
+                limiter.MyRigidbody.velocity = new Vector3(oldVelocity.x, uppercut.SkillContainer.uppercutInfo.uppercutUpVelocity, oldVelocity.z);
                 Animator.SetFloat(_upercutStateFloatName, (int)uppercut.UppercutState);
             }
 
@@ -290,7 +294,7 @@ public class PlayerAnimationControiler : MonoBehaviour
                 Animator.SetFloat(_upercutStateFloatName, (int)uppercut.UppercutState);
             }
 
-            if(_uppercutWaitEnd != null)
+            if (_uppercutWaitEnd != null)
             {
                 StopCoroutine(_uppercutWaitEnd);
                 _uppercutWaitEnd = null;
@@ -324,5 +328,11 @@ public class PlayerAnimationControiler : MonoBehaviour
             limiter.JumpUnfreeze();
             limiter.UnfreezeWalking();
         }
+
+    }
+    public void SetAnimationSpeed(float newSpeed)
+    {
+        Animator.SetFloat(_totalAnimationSpeedFloatName, newSpeed);
+        Animator.SetFloat(_cenaPunchSpeedFloatName, _lastCenaPunchSpeed * newSpeed);
     }
 }
