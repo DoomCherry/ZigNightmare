@@ -34,6 +34,10 @@ public class PauseManager : SingleMonoBehaviour<PauseManager>
 
     public void SetPause(bool isInPause)
     {
+        _agentList = _agentList.Where(n => n != null).ToArray();
+        _particleSystems = _particleSystems.Where(n => n != null).ToArray();
+        _characterList = _characterList.Where(n => n != null).ToArray();
+
         SetPauseForCharacters(isInPause);
         SetPauseForParticles(isInPause);
         SetPauseForAgents(isInPause);

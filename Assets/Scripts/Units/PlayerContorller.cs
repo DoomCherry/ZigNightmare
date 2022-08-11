@@ -214,6 +214,22 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         remove => _onStaminaChange.RemoveListener(value);
     }
 
+    [SerializeField]
+    private UnityEvent _onPauseMenuEnter;
+    public event UnityAction OnPauseMenuEnter
+    {
+        add => _onPauseMenuEnter.AddListener(value);
+        remove => _onPauseMenuEnter.RemoveListener(value);
+    }
+
+    [SerializeField]
+    private UnityEvent _onPauseMenuExit;
+    public event UnityAction OnPauseMenuExit
+    {
+        add => _onPauseMenuExit.AddListener(value);
+        remove => _onPauseMenuExit.RemoveListener(value);
+    }
+
 
 
 
@@ -249,6 +265,15 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseManager.Instance.SetPause(!PauseManager.Instance.IsInPause);
+
+            if (PauseManager.Instance.IsInPause)
+            {
+                _onPauseMenuEnter?.Invoke();
+            }
+            else
+            {
+                _onPauseMenuExit?.Invoke();
+            }
         }
     }
 
