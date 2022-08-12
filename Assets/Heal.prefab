@@ -325,7 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targeter: {fileID: 0}
   _flollowTo: {fileID: 0}
-  _speed: 0.02
+  _speed: 0.1
   _hideDistance: 0
   _followYAdditionalPosition: 0
 --- !u!1 &2485252867489502080
