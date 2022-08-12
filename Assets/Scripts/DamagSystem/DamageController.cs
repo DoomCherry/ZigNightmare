@@ -36,6 +36,8 @@ public class DamageController : MonoBehaviour
     //-------FIELD
     [SerializeField]
     private bool _isDestroyAfterDeath = true;
+    [SerializeField]
+    private float _destroyTime = 2;
 
     [SerializeField]
     private float _maxHp;
@@ -131,6 +133,6 @@ public class DamageController : MonoBehaviour
     public void Demolish()
     {
         if (_isDestroyAfterDeath)
-            Destroy(gameObject);
+            this.WaitSecond(_destroyTime, delegate { Destroy(gameObject); });            
     }
 }

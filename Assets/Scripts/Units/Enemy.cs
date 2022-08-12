@@ -58,9 +58,6 @@ public class Enemy : MonoBehaviour, ITarget, ICharacterLimiter
 
     //-------FIELD
     [SerializeField]
-    private GameObject _onDestroyEffect;
-
-    [SerializeField]
     private Animator _customAnimator;
 
     [SerializeField]
@@ -144,13 +141,6 @@ public class Enemy : MonoBehaviour, ITarget, ICharacterLimiter
     private void OnDestroy()
     {
         SelectorHandler.Instance.ForgetTarget(this);
-
-        if(_onDestroyEffect != null)
-        {
-            GameObject effect = Instantiate(_onDestroyEffect);
-            effect.gameObject.SetActive(true);
-            effect.transform.position = MyTransform.position;
-        }    
     }
     protected virtual void ActivateSkill()
     {

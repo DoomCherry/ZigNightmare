@@ -21,6 +21,9 @@ public class BottomDraggingHandControiler : MonoBehaviour
     {
         get
         {
+            if (_customCollider != null)
+                return _customCollider;
+
             _collider = _collider == null ? GetComponent<Collider>() : _collider;
             return _collider;
         }
@@ -33,7 +36,11 @@ public class BottomDraggingHandControiler : MonoBehaviour
 
     //-------FIELD
     [SerializeField]
+    private Transform _customPositionHand;
+    [SerializeField]
     private Animator _customAnimator;
+    [SerializeField]
+    private Collider _customCollider;
     private BottomDragging _bottomDragging;
 
     private Transform _myTransform;
@@ -109,7 +116,7 @@ public class BottomDraggingHandControiler : MonoBehaviour
             _target = _bottomDragging.Selector.CurrentTarget;
             Vector3 targetPosition = _target.MyTransform.position;
 
-            Vector3 selfPosition =  MyTransform.position;
+            Vector3 selfPosition = MyTransform.position;
 
             Vector3 lockTo = targetPosition - selfPosition;
 
@@ -167,7 +174,7 @@ public class BottomDraggingHandControiler : MonoBehaviour
     {
 
         _lastGrabPosition = MyTransform.position;
-        while (Vector3.Distance(MyTransform.position, _bottomDragging.transform.position) > _bottomDragging.StopDistance)
+        while (Vector3.Distance(_customPositionHand == null ? MyTransform.position : _customPositionHand.position, _bottomDragging.transform.position) > _bottomDragging.StopDistance)
         {
             yield return new WaitForSeconds(Time.fixedDeltaTime);
 
@@ -177,14 +184,19 @@ public class BottomDraggingHandControiler : MonoBehaviour
                 if (CheckTargetIsDestroy())
                     break;
 
-                float lastDistance = Vector3.Distance(_lastGrabPosition, MyTransform.position);
+                float lastDistance = Vector3.Distance(_lastGrabPosition, _customPositionHand == null ? MyTransform.position : _customPositionHand.position);
 
                 _graggableTarget.TakeDamage(_bottomDragging.DamagePerOneUnit * lastDistance);
-                _graggableTarget.MyRigidbody.position = MyTransform.position;
-                _lastGrabPosition = MyTransform.position;
+                _graggableTarget.MyRigidbody.position = _customPositionHand == null ? MyTransform.position : _customPositionHand.position;
+                _lastGrabPosition = _customPositionHand == null ? MyTransform.position : _customPositionHand.position;
             }
 
-            MyTransform.position -= (MyTransform.position - _bottomDragging.MyTransform.position).normalized * _bottomDragging.GrabSpeed;
+
+            if (_customPositionHand == null)
+                MyTransform.position -= (MyTransform.position - _bottomDragging.MyTransform.position).normalized * _bottomDragging.GrabSpeed;
+            else
+                _customPositionHand.position -= (_customPositionHand.position - _bottomDragging.MyTransform.position).normalized * _bottomDragging.GrabSpeed;
+
             onPull?.Invoke();
             _onPulling?.Invoke();
         }
@@ -204,7 +216,7 @@ public class BottomDraggingHandControiler : MonoBehaviour
         position.y = MyTransform.position.y - _bottomDragging.HandHeightStart;
         MyTransform.position = position;
 
-        while (isCollide == false && Vector3.Distance(MyTransform.position, _bottomDragging.MyTransform.position) < _bottomDragging.MaxDistance)
+        while (isCollide == false && Vector3.Distance(_customPositionHand == null ? MyTransform.position : _customPositionHand.position, _bottomDragging.MyTransform.position) < _bottomDragging.MaxDistance)
         {
             yield return new WaitForSeconds(Time.fixedDeltaTime);
 
@@ -218,9 +230,13 @@ public class BottomDraggingHandControiler : MonoBehaviour
             if (_bottomDragging.IsFollowToTarget)
                 MyTransform.rotation = Quaternion.LookRotation(lockTo);
             else
-                MyTransform.rotation = Quaternion.LookRotation( (targetPosition - position).normalized * 1000 );
+                MyTransform.rotation = Quaternion.LookRotation((targetPosition - position).normalized * 1000);
 
-            MyTransform.position += MyTransform.forward * _bottomDragging.ProjectileSpeed;
+
+            if (_customPositionHand == null)
+                MyTransform.position += MyTransform.forward * _bottomDragging.ProjectileSpeed;
+            else
+                _customPositionHand.position += MyTransform.forward * _bottomDragging.ProjectileSpeed;
 
         }
 
@@ -250,14 +266,19 @@ public class BottomDraggingHandControiler : MonoBehaviour
         Vector3 position = MyTransform.position;
         position.y = MyTransform.position.y - _bottomDragging.HandHeightStart;
         MyTransform.position = position;
-        while (isCollide == false && Vector3.Distance(MyTransform.position, _bottomDragging.MyTransform.position) < _bottomDragging.MaxDistance)
+        while (isCollide == false && Vector3.Distance(_customPositionHand == null ? MyTransform.position : _customPositionHand.position, _bottomDragging.MyTransform.position) < _bottomDragging.MaxDistance)
         {
 
             targets = Physics.OverlapBox(MyCollider.bounds.center, MyCollider.bounds.extents / 2, Quaternion.identity, _bottomDragging.TargetLayer)
                              .Select(n => n.GetComponent<ICharacterLimiter>()).ToArray();
             isCollide = targets.Length > 0;
 
-            MyTransform.position += direction * _bottomDragging.ProjectileSpeed;
+
+            if (_customPositionHand == null)
+                MyTransform.position += direction * _bottomDragging.ProjectileSpeed;
+            else
+                _customPositionHand.position += direction * _bottomDragging.ProjectileSpeed;
+
             yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
 
