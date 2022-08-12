@@ -302,6 +302,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 _mousePointInWorld = line.GetCoordsFromProjectionY(MyTransform.position.y);
                 _mousePointInWorld.y = _lookToY;
             }
+            else
+                StopMove();
 
             MyRigidbody.useGravity = !FallingIsFreeze;
 
