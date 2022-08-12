@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 184950751378207249, guid: c80a9252c91abc847ac3be3a9342ee99, type: 3}
   _name: 3
-  coldown: 6
+  coldown: 4
   minigunInfo:
     bulletDamage: 0
     torsionSpeed: 0
@@ -33,8 +33,8 @@ MonoBehaviour:
     grabSpeed: 0
     stopDistance: 0
   blastInfo:
-    blastDamage: 150
-    blastPrepareTime: 1
+    blastDamage: 800
+    blastPrepareTime: 0.5
     blastPushingForce: 20
     blastEnemyLimits: 25
     blastLimitTime: 1
