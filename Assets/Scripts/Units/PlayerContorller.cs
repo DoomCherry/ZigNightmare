@@ -71,6 +71,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
     private Vector3 _velocityLimit = Vector3.one * 15;
 
     [SerializeField]
+    private float _lerpVelocityLimitSpeed = 0.25f;
+
+    [SerializeField]
     private string _horizontalAxisName = "Horizontal", _verticalAxisName = "Vertical";
 
     [SerializeField]
@@ -99,6 +102,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     [SerializeField]
     private float _lookToY = 1;
+
+    private Vector3 _currentVelocityLimit;
 
     private Collider _currentSloppingFlore;
 
@@ -282,6 +287,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     private void FixedUpdate()
     {
+        _currentVelocityLimit = Vector3.Lerp(_currentVelocityLimit, _velocityLimit, _lerpVelocityLimitSpeed);
+
         if (OnFlore)
         {
             if (_lastOnFlorePoints.Count > _maxOnFlorePoint)
@@ -361,6 +368,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
                 if (Input.GetKey(KeyCode.LeftShift) && _currentStamina >= _staminaPerOnceDash && !_dashButtomIsActive)
                 {
+                    _currentVelocityLimit = Vector3.one * _dashSpeed;
+
                     Vector3 dashPosition = MyTransform.position + (MyTransform.forward);
                     dashPosition.y = 100;
 
@@ -415,9 +424,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                                     FallingIsFreeze ? 0.06f : Mathf.Clamp(MyRigidbody.velocity.y + _walkDirection.y * _jumpPower, -_jumpPower, _jumpPower),
                                     MyRigidbody.velocity.z + (_walkDirection.z * dashSpeed) + (_walkDirection.z * Mathf.Abs(walkSpeed.z)));
 
-            MyRigidbody.velocity = new Vector3(Mathf.Clamp(MyRigidbody.velocity.x, -_velocityLimit.x, _velocityLimit.x),
-                                               Mathf.Clamp(MyRigidbody.velocity.y, -_velocityLimit.y, _velocityLimit.y),
-                                               Mathf.Clamp(MyRigidbody.velocity.z, -_velocityLimit.z, _velocityLimit.z));
+            MyRigidbody.velocity = new Vector3(Mathf.Clamp(MyRigidbody.velocity.x, -_currentVelocityLimit.x, _currentVelocityLimit.x),
+                                               Mathf.Clamp(MyRigidbody.velocity.y, -_currentVelocityLimit.y, _currentVelocityLimit.y),
+                                               Mathf.Clamp(MyRigidbody.velocity.z, -_currentVelocityLimit.z, _currentVelocityLimit.z));
 
             if (!RotationIsFreeze && (Mathf.Abs(_walkDirection.x) > 0 || Mathf.Abs(_walkDirection.z) > 0))
             {

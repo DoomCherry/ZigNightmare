@@ -17850,7 +17850,7 @@ GameObject:
   - component: {fileID: 1732971768}
   - component: {fileID: 8573673109356270177}
   m_Layer: 8
-  m_Name: Position
+  m_Name: PositionTurretSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18808,7 +18808,7 @@ GameObject:
   - component: {fileID: 3354394540848181294}
   - component: {fileID: 7910737513635043528}
   m_Layer: 8
-  m_Name: TakeDamageSource
+  m_Name: TakeDamageSourceTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
