@@ -68,6 +68,9 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
     //-------FIELD
     [SerializeField]
+    private Vector3 _velocityLimit = Vector3.one * 15;
+
+    [SerializeField]
     private string _horizontalAxisName = "Horizontal", _verticalAxisName = "Vertical";
 
     [SerializeField]
@@ -302,11 +305,11 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
             MyRigidbody.useGravity = !FallingIsFreeze;
 
-            _walkDirection = new Vector3(Input.GetAxisRaw(_horizontalAxisName),0, Input.GetAxisRaw(_verticalAxisName));
+            _walkDirection = new Vector3(Input.GetAxisRaw(_horizontalAxisName), 0, Input.GetAxisRaw(_verticalAxisName));
 
             Vector3 walkSpeed = Vector3.zero;
 
-            if (Input.GetAxisRaw(_verticalAxisName) != 0 && !WalkingIsFreeze)
+            if (Input.GetAxisRaw(_verticalAxisName) != 0 && !WalkingIsFreeze && !IsSlipping)
             {
                 int axisSign = (int)Mathf.Sign(Input.GetAxisRaw(_verticalAxisName));
                 float newSpeed = MyRigidbody.velocity.z + (_velocitySpeed * axisSign);
@@ -315,7 +318,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 walkSpeed.z = _velocitySpeed - Mathf.Abs(newSpeed - fixSpeed);
             }
 
-            if (Input.GetAxisRaw(_horizontalAxisName) != 0 && !WalkingIsFreeze)
+            if (Input.GetAxisRaw(_horizontalAxisName) != 0 && !WalkingIsFreeze && !IsSlipping)
             {
                 int axisSign = (int)Mathf.Sign(Input.GetAxisRaw(_horizontalAxisName));
                 float newSpeed = MyRigidbody.velocity.x + (_velocitySpeed * axisSign);
@@ -341,10 +344,6 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
                 }
             }
 
-            void StopMove()
-            {
-                MyRigidbody.velocity = new Vector3(0, MyRigidbody.velocity.y, 0);
-            }
 
             float dashSpeed = 0;
             void UseDash()
@@ -411,9 +410,12 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
 
             MyRigidbody.velocity = new Vector3(
                                     MyRigidbody.velocity.x + (_walkDirection.x * dashSpeed) + (_walkDirection.x * Mathf.Abs(walkSpeed.x)),
-                                    FallingIsFreeze ? 0.2f : Mathf.Clamp(MyRigidbody.velocity.y + _walkDirection.y * _jumpPower, -_jumpPower, _jumpPower),
+                                    FallingIsFreeze ? 0.06f : Mathf.Clamp(MyRigidbody.velocity.y + _walkDirection.y * _jumpPower, -_jumpPower, _jumpPower),
                                     MyRigidbody.velocity.z + (_walkDirection.z * dashSpeed) + (_walkDirection.z * Mathf.Abs(walkSpeed.z)));
 
+            MyRigidbody.velocity = new Vector3(Mathf.Clamp(MyRigidbody.velocity.x, -_velocityLimit.x, _velocityLimit.x),
+                                               Mathf.Clamp(MyRigidbody.velocity.y, -_velocityLimit.y, _velocityLimit.y),
+                                               Mathf.Clamp(MyRigidbody.velocity.z, -_velocityLimit.z, _velocityLimit.z));
 
             if (!RotationIsFreeze && (Mathf.Abs(_walkDirection.x) > 0 || Mathf.Abs(_walkDirection.z) > 0))
             {
@@ -534,6 +536,10 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         }
 
         _lastPosition = MyTransform.position;
+    }
+    private void StopMove()
+    {
+        MyRigidbody.velocity = new Vector3(0, MyRigidbody.velocity.y, 0);
     }
 
     public void ReturnLastFlorePoint()
@@ -666,6 +672,7 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         FreezeSkill();
         JumpFreeze();
         AnimationControiler.SetAnimationSpeed(0);
+        StopMove();
     }
 
     public void FullSystemUnfreeze()
@@ -677,5 +684,8 @@ public class PlayerContorller : MonoBehaviour, ICharacterLimiter, ITarget
         UnfreezeWalking();
         JumpUnfreeze();
         AnimationControiler.SetAnimationSpeed(1);
+        _dashButtomIsActive = false;
+        _isDashing = false;
+        StopMove();
     }
 }
