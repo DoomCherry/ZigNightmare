@@ -175,6 +175,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _damage: 1
+  _bulletLive: 10
   _collideLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -369,7 +371,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minimalInterval: 0.3
   _globalSource: {fileID: 0}
+  _isInstanceable: 0
+  _instanceLiveTime: 0.5
 --- !u!1 &2765648519530558671
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,4 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14df5db3de29ed94c96ef7b55f2f3227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minimalInterval: 0.3
   _globalSource: {fileID: 0}
+  _isInstanceable: 0
+  _instanceLiveTime: 0.5

@@ -3435,7 +3435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isDestroyAfterDeath: 1
-  _maxHp: 250
+  _maxHp: 150
   _additionalDamageDetectors: []
   _onChangeMaxHp:
     m_PersistentCalls:
