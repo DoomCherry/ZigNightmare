@@ -27,7 +27,7 @@ MonoBehaviour:
     maxWaitingTime: 0
     punchSpeed: 0
   downScorpionInfo:
-    damagePerUnit: 15
+    damagePerUnit: 20
     maxDistance: 20
     projectileSpeed: 0.5
     grabSpeed: 0.5

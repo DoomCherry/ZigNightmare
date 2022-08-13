@@ -16,7 +16,7 @@ MonoBehaviour:
   _name: 1
   _movespeed: 4
   _velocity: 0
-  _maxHp: 500
+  _maxHp: 200
   playerInfo:
     jumpPower: 0
     dashPower: 0

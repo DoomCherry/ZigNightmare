@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 1161201145128540330, guid: c80a9252c91abc847ac3be3a9342ee99, type: 3}
   _name: 0
-  coldown: 4
+  coldown: 5
   minigunInfo:
     bulletDamage: 1
     torsionSpeed: 1
