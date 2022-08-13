@@ -53,6 +53,7 @@ public class TargetSelector : MonoBehaviour
     private Camera _main;
     private Transform _myTransform;
     private TargetInfo _currentTarget;
+    private Coroutine _startSelector;
 
 
 
@@ -75,7 +76,27 @@ public class TargetSelector : MonoBehaviour
             throw new System.NullReferenceException($"{name}: {SelectorHandler.Instance} is missing.");
 
         _main = Camera.main;
-        StartCoroutine(StartUpdate());
+        _startSelector = StartCoroutine(StartUpdate());
+    }
+
+    private void OnEnable()
+    {
+        _main = Camera.main;
+        if (_startSelector != null)
+        {
+            return;
+        }
+
+        _startSelector = StartCoroutine(StartUpdate());
+    }
+
+    private void OnDisable()
+    {
+        if (_startSelector == null)
+            return;
+
+        StopCoroutine(_startSelector);
+        _startSelector = null;
     }
 
     private void TargetSelectorUpdate()
@@ -107,6 +128,9 @@ public class TargetSelector : MonoBehaviour
 
         _currentTarget.target = null;
         _currentTarget.conditionalDistance = float.MaxValue;
+
+        if (SelectorHandler.Instance == null || SelectorHandler.Instance.AllTarget == null || SelectorHandler.Instance.AllTarget.Count < 1)
+            return;
 
         for (int i = 0; i < SelectorHandler.Instance.AllTarget.Count; i++)
         {
