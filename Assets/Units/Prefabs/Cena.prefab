@@ -931,7 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8497996951713002838}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,7 +2286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8497996952343817508}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3033,7 +3033,7 @@ GameObject:
   - component: {fileID: 8497996952646111949}
   - component: {fileID: 8497996952646111950}
   - component: {fileID: 8497996952646111951}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3435,7 +3435,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isDestroyAfterDeath: 1
-  _maxHp: 150
+  _destroyTime: 2
+  _maxHp: 250
   _additionalDamageDetectors: []
   _onChangeMaxHp:
     m_PersistentCalls:
@@ -3459,6 +3460,42 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8497996952888043477}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8497996951897232499}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8497996952888043482}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3565,7 +3602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3fc5eaf8c946f4c84a1e16d73c9bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onDestroyEffect: {fileID: 456633090}
   _customAnimator: {fileID: 8497996951897232497}
   _unitContainer: {fileID: 11400000, guid: da7963f7881609e4a8ccaff00c3c48b5, type: 2}
   _prepareTriggerName: PrepareToSkill
@@ -3601,7 +3637,7 @@ GameObject:
   - component: {fileID: 8497996952896892189}
   - component: {fileID: 8497996952896892187}
   - component: {fileID: 8497996952896892188}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: HPBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3943,7 +3979,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8497996952996173061}
-  m_LocalRotation: {x: 0.0015189893, y: -0.18329068, z: 0.008146099, w: 0.9830238}
+  m_LocalRotation: {x: 0.0015189907, y: -0.18329068, z: 0.00814611, w: 0.9830238}
   m_LocalPosition: {x: -0.008799899, y: -0.00013659209, z: 0.005153777}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_Children:
@@ -4242,7 +4278,7 @@ GameObject:
   - component: {fileID: 8497996953175135723}
   - component: {fileID: 8497996953175135721}
   - component: {fileID: 8497996953175135722}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4972,7 +5008,7 @@ GameObject:
   - component: {fileID: 8497996953437866667}
   - component: {fileID: 8497996953437866665}
   - component: {fileID: 8497996953437866666}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
